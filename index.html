@@ -1,0 +1,65 @@
+---
+# my index
+---
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="icon" href="//cdn.cloudseat.net/favicon.png"/>
+  <link rel="stylesheet" href="assets/css/docs.css"/>
+  <link rel="stylesheet" href="assets/css/rouge.css"/>
+  <title>战国册 / 文档库</title>
+</head>
+<body>
+
+<aside id="jekydocs-summary"></aside>
+<main id="jekydocs-content"></main>
+<div id="jekydocs-toc">
+  <div><a href="">常见网速</a></div>
+  <div><a class="active" href="">基础设备</a></div>
+  <div><a href="">终端设备</a></div>
+  <div><a href="">网络布局</a></div>
+  <div><a href="">注意事项</a></div>
+</div>
+
+<script>
+function fetch(url, callback) {
+  let xhr = new XMLHttpRequest()
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      if (this.status == 404) {
+        console.error('Page not found.')
+      }
+      if (this.status == 200) {
+        callback(this.responseText)
+      }
+    }
+  }
+  xhr.open("GET", location.pathname+url, true)
+  xhr.send()
+}
+
+fetch('SUMMARY.html', res => {
+  document.querySelector('#jekydocs-summary').innerHTML = res
+
+  let summary = document.querySelectorAll('#jekydocs-summary a')
+  summary.forEach(link => {
+    link.onclick = function() {
+      link.className = 'active'
+      fetch(link.dataset.href, res => {
+        document.querySelector('#jekydocs-content').innerHTML = res
+      })
+    }
+  })
+})
+
+fetch('README.html', res => {
+  document.querySelector('#jekydocs-content').innerHTML = res
+})
+</script>
+
+</body>
+</html>

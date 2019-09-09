@@ -1,0 +1,5 @@
+# baseurl: /blog
+# permalink: /:title.html
+
+markdown: kramdown
+highlighter: rouge
