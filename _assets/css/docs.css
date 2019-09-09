@@ -166,24 +166,35 @@ aside .logo .text {
 #jekydocs-content {
   flex: 1;
   overflow-y: auto;
-  padding: 10px 300px 40px 90px;
+  padding: 10px 280px 40px 90px;
 }
 
 #jekydocs-toc {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
   width: 200px;
   font-size: 12px;
   font-weight: 700;
+  line-height: 2.2;
+}
+
+#jekydocs-toc div {
+  color: #ccc;
+  padding: 0 20px;
+  border-left: 1px #eee solid;
 }
 
 #jekydocs-toc a {
   display: block;
   color: #7285a1;
-  padding: 3px 20px;
+  padding: 0 20px;
   border-left: 1px #eee solid;
   text-decoration: none;
+}
+
+#jekydocs-toc a.toc-3 {
+  padding-left: 40px;
 }
 
 #jekydocs-toc a:hover {

@@ -1,6 +1,6 @@
 # 收藏夹
 
-## ⭐ 网站书签 <a id="urls"></a>
+## ⭐ 网站书签
 
 ### 服务类
 
@@ -135,7 +135,7 @@
   * [https://virtualpiano.net](https://virtualpiano.net)
   * [http://www.multiplayerpiano.com](http://www.multiplayerpiano.com)
 
-## 💗 应用程序 <a id="apps"></a>
+## 💗 应用程序
 
 ### 系统工具
 

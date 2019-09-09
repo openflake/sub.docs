@@ -47,15 +47,54 @@ function fetch(url, callback) {
   xhr.send()
 }
 
+const Toc = {
+  toc: [],
+  add: function(obj) {
+    this.toc.push(obj)
+  },
+  clear: function() {
+    this.toc = []
+  },
+  html: function() {
+    let html = '<div>文档目录</div>'
+    this.toc.forEach((entry, index) => {
+      if (index > 0) {
+        html += '<a class="toc-' + entry.level + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
+      }
+    })
+    this.clear()
+    return html
+  }
+}
+
+let renderer = new marked.Renderer();
+renderer.heading = function(text, level, raw) {
+  let anchor = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w\\u4e00-\\u9fa5]]+/g, '-');
+  Toc.add({ anchor, level, text })
+  return `<h${level} id="${anchor}">${text}</h${level}>`
+}
+
+marked.setOptions({
+  renderer: renderer,
+})
+
+let lastClicked = null
+
 fetch('SUMMARY.md', res => {
   document.querySelector('#jekydocs-summary').innerHTML = marked(res)
+  Toc.clear()
 
   let summary = document.querySelectorAll('#jekydocs-summary a')
   summary.forEach(link => {
     link.onclick = function() {
+      if (lastClicked)
+      lastClicked.className = ''
+      lastClicked = link
       link.className = 'active'
+
       fetch(link.href.split('#')[1], res => {
         document.querySelector('#jekydocs-content').innerHTML = marked(res)
+        document.querySelector('#jekydocs-toc').innerHTML = Toc.html()
       })
     }
   })
@@ -63,6 +102,7 @@ fetch('SUMMARY.md', res => {
 
 fetch('README.md', res => {
   document.querySelector('#jekydocs-content').innerHTML = marked(res)
+  document.querySelector('#jekydocs-toc').innerHTML = Toc.html()
 })
 </script>
 
