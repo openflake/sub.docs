@@ -103,18 +103,25 @@ a:hover {
  * Layout
  * ------------------------------------------- */
 
-#jekydocs-summary {
+aside {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  height: 100vh;
   background: #fefefe;
   box-shadow: 0 0 12px 0 rgba(130, 150, 170, 0.2);
 }
 
-#jekydocs-summary h5 {
+aside h5 {
   color: #ccc;
-  margin: 25px 44px 5px;
+  margin: 25px 44px 0;
 }
 
-#jekydocs-summary a {
+aside p {
+  margin: 5px 0;
+}
+
+aside a {
   display: block;
   font-weight: 700;
   padding: 5px 40px;
@@ -122,15 +129,38 @@ a:hover {
   color: #5C6975;
 }
 
-#jekydocs-summary a:hover {
+aside a:hover {
   background: #f8f8f8;
   text-decoration: none;
 }
 
-#jekydocs-summary a.active {
+aside a.active {
   color: #42b983;
   background: #f5f8fe;
   border-left: #42b983 4px solid;
+}
+
+aside .logo {
+    text-align: center;
+  padding: 20px;
+}
+aside .logo .emoji {
+  font-size: 24px;
+}
+aside .logo .text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+#jekydocs-summary {
+  overflow-y: auto;
+  padding: 10px 0 20px;
+}
+
+
+#jekydocs-summary::-webkit-scrollbar {
+  width: 0;
 }
 
 #jekydocs-content {
@@ -168,11 +198,10 @@ a:hover {
 input[type='search'] {
   outline: 0;
   border: 0;
-  border-bottom: #eee 1px solid;
   width: 100%;
-  background: url(../img/search.png) no-repeat center left;
+  background: #f8f8f8 url(../img/search.png) no-repeat 40px center;
   background-size: 18px 18px;
-  padding: 10px 0 8px 28px;
+  padding: 15px 40px 15px 65px;
   font-size: 14px;
 }
 

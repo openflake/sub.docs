@@ -5,13 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
   <link rel="icon" href="//cdn.cloudseat.net/favicon.png"/>
-  <link rel="stylesheet" href="assets/css/docs.css"/>
-  <link rel="stylesheet" href="assets/css/rouge.css"/>
+  <link rel="stylesheet" href="_assets/css/docs.css"/>
+  <link rel="stylesheet" href="_assets/css/rouge.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <title>战国册 / 文档库</title>
 </head>
 <body>
 
-<aside id="jekydocs-summary"></aside>
+<aside>
+  <div class="logo">
+    <span class="emoji">🧔</span>
+    <span class="text">战国册 / 文档库</span>
+  </div>
+  <div class="search"><input type="search" placeholder="搜索..."/></div>
+  <div id="jekydocs-summary"></div>
+</aside>
+
 <main id="jekydocs-content"></main>
 <div id="jekydocs-toc">
   <div><a href="">常见网速</a></div>
@@ -39,24 +48,21 @@ function fetch(url, callback) {
 }
 
 fetch('SUMMARY.md', res => {
-  document.querySelector('#jekydocs-summary').innerHTML = res
+  document.querySelector('#jekydocs-summary').innerHTML = marked(res)
 
   let summary = document.querySelectorAll('#jekydocs-summary a')
   summary.forEach(link => {
     link.onclick = function() {
       link.className = 'active'
-      fetch(link.dataset.href, res => {
-        document.querySelector('#jekydocs-content').innerHTML = res
+      fetch(link.href.split('#')[1], res => {
+        document.querySelector('#jekydocs-content').innerHTML = marked(res)
       })
     }
   })
 })
 
-fetch('https://zerg.cc/test2/others', res => {
-  console.log(res)
-})
 fetch('README.md', res => {
-  document.querySelector('#jekydocs-content').innerHTML = res
+  document.querySelector('#jekydocs-content').innerHTML = marked(res)
 })
 </script>
 
