@@ -79,6 +79,7 @@ marked.setOptions({
 })
 
 let lastClicked = null
+let firstLoad = location.hash.substr(1) || 'README.md'
 
 fetch('SUMMARY.md', res => {
   document.querySelector('#jekydocs-summary').innerHTML = marked(res)
@@ -100,7 +101,7 @@ fetch('SUMMARY.md', res => {
   })
 })
 
-fetch('README.md', res => {
+fetch(firstLoad, res => {
   document.querySelector('#jekydocs-content').innerHTML = marked(res)
   document.querySelector('#jekydocs-toc').innerHTML = Toc.html()
 })
