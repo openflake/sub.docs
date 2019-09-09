@@ -1,7 +1,3 @@
----
-# my index
----
-
 <!doctype html>
 <html>
 <head>
@@ -42,7 +38,7 @@ function fetch(url, callback) {
   xhr.send()
 }
 
-fetch('SUMMARY.html', res => {
+fetch('SUMMARY.md', res => {
   document.querySelector('#jekydocs-summary').innerHTML = res
 
   let summary = document.querySelectorAll('#jekydocs-summary a')
@@ -56,7 +52,10 @@ fetch('SUMMARY.html', res => {
   })
 })
 
-fetch('README.html', res => {
+fetch('https://zerg.cc/test/others', res => {
+  console.log(res)
+})
+fetch('README.md', res => {
   document.querySelector('#jekydocs-content').innerHTML = res
 })
 </script>
