@@ -35,6 +35,7 @@
         lastClickedLink = link
         link.className = 'active'
 
+        Progress.start()
         fetch(link.href.split('#')[1], res => {
           docContent.scrollTop = 0
           docContent.innerHTML = marked(res)
@@ -100,7 +101,6 @@
     xhr.open("GET", url, true)
     xhr.send()
 
-    Progress.start()
     xhr.onreadystatechange = function() {
       if (this.readyState == 4) {
         Progress.done()
