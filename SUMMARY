@@ -10,6 +10,6 @@
   {% assign currfolder = folder %}
 ##### {{ folder }}
   {% endif %}
-  [{{ post.title }}](#{{ post.url}})
+  [{{ post.title }}](#{{ post.url | remove_first:"/" }})
   {% endunless %}
 {% endfor %}
