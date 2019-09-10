@@ -208,6 +208,18 @@ aside .logo .emoji {
   border-left: 1px #42b983 solid;
 }
 
+#jekydocs-toc a.toc-3 {
+  padding-left: 40px;
+}
+
+#jekydocs-toc a.toc-4 {
+  padding-left: 60px;
+}
+
+#jekydocs-toc a.toc-5 {
+  padding-left: 80px;
+}
+
 /* ----------------------------------------------
  * Responsive
  * ------------------------------------------- */
