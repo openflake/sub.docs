@@ -63,6 +63,9 @@
 
     marked.setOptions({
       renderer: renderer,
+      highlight: function(code) {
+        return hljs.highlightAuto(code).value
+      },
     })
   }
 
@@ -99,8 +102,13 @@
     xhr.open("GET", url, true)
     xhr.send()
     xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        callback(this.responseText)
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+          callback(this.responseText)
+        } else {
+          Progress.done()
+          alert('文档不存在或读取错误')
+        }
       }
     }
   }
