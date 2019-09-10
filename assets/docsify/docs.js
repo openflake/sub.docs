@@ -34,11 +34,13 @@
         lastClickedLink.className = ''
         lastClickedLink = link
         link.className = 'active'
+        Progress.start()
 
         fetch(link.href.split('#')[1], res => {
           docContent.scrollTop = 0
           docContent.innerHTML = marked(res)
           docToc.innerHTML = Toc.html()
+          Progress.done()
         })
       }
     })
