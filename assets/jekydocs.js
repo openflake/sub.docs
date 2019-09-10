@@ -127,7 +127,7 @@
         if (this.status == 200) {
           callback(this.responseText)
         } else {
-          alert('文档不存在或读取错误')
+          console.error('Page not found')
         }
       }
     }
