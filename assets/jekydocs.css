@@ -91,6 +91,21 @@ hr {
   margin: 20px 0;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 5px 10px;
+  border-bottom: #ddd 1px solid;
+  border-top: #ddd 1px solid;
+}
+
+td {
+  padding: 5px 10px;
+  border-bottom: #eee 1px solid;
+}
+
 a {
   color: #42b983;
   text-decoration: none;
@@ -235,6 +250,7 @@ aside .logo span {
 #jekydocs-toc a.toc-0 {
   color: #ccc;
   padding-left: 45px;
+  line-height: 1.6;
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M384.088 191.941h512.023v63.893H384.088zm-.008 256.283h512.091v63.905H384.08zm-.002 255.663h512.099v63.874H384.078zM127.883 191.802H256.05v64.034H127.883zm.182 256.441h127.917v63.768H128.065zm.038 255.608h127.95v63.926h-127.95z' fill='%23ccc'/%3E%3C/svg%3E") no-repeat 16px center
 }
 

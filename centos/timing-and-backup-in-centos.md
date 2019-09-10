@@ -2,7 +2,7 @@
 
 CentOS的定时服务名叫crontab，首先在命令行输入 `crontab` 检查是否已安装，如果提 示`command not found` 说明未安装。
 
-### 一. 安装crontab
+### 一. 安装 Crontab
 
 ```bash
 yum install vixie-cron

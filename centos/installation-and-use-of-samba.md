@@ -36,7 +36,7 @@ chown -R admin:SAMBA /mnt/nas/MEDIA
 chmod 777 /mnt/nas/MEDIA
 ```
 
-### 四. 配置Samba
+### 四. 配置文件
 
 备份并打开 Samba 配置文件：
 

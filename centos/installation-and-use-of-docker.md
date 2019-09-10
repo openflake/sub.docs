@@ -59,31 +59,22 @@ docker run -d -p 11211:11211 --name memcached memcached
 ```bash
 # 搜索镜像
 docker search <镜像名称>
-
 # 显示已安装镜像列表
 docker images
-
 # 删除镜像
 docker rmi <镜像ID>
-
 # 显示容器列表 -a表示所有（默认只显示正在运行的容器）
 docker ps -a
-
 # 自启动容器
 docker update --restart=always <容器ID>|<容器名称>
-
 # 查看容器信息
 docker inspect <容器ID>|<容器名称>
-
 # 查看容器日志
 docker container logs <容器id>|<容器名称>
-
 # 运行容器
 docker start <容器ID>|<容器名称>
-
 # 停止容器
 docker stop <容器ID>|<容器名称>
-
 # 删除容器
 docker rm <容器ID>|<容器名称>
 ```
