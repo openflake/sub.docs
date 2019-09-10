@@ -76,7 +76,7 @@ marked.setOptions({
 let lastClicked = null
 let firstLoad = location.hash.substr(1) || 'README.md'
 
-fetch('SUMMARY.md', res => {
+fetch('SUMMARY', res => {
   document.querySelector('#jekydocs-summary').innerHTML = marked(res)
   Toc.clear()
 

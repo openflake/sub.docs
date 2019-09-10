@@ -10,6 +10,6 @@
   {% assign currfolder = folder %}
 ##### {{ folder }}
   {% endif %}
-  <div><a data-href="#{{ post.url}}">{{ post.title }}</a></div>
+  [{{ post.title }}](#{{ post.url}})
   {% endunless %}
 {% endfor %}
