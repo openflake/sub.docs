@@ -2,17 +2,24 @@
  * Load index page with SUMMARY and README or location hash path
  */
 (function() {
+  let docSummary, docContent, docToc
   initMarked()
 
-  fetch('SUMMARY', res => {
-    document.querySelector('#jekydocs-summary').innerHTML = marked(res)
-    Toc.clear()
-    initSummary()
-  })
+  document.addEventListener('DOMContentLoaded', function() {
+    docSummary = document.querySelector('#jekydocs-summary')
+    docContent = document.querySelector('#jekydocs-content')
+    docToc = document.querySelector('#jekydocs-toc')
 
-  fetch(location.hash.substr(1) || 'README.md', res => {
-    document.querySelector('#jekydocs-content').innerHTML = marked(res)
-    document.querySelector('#jekydocs-toc').innerHTML = Toc.html()
+    fetch('SUMMARY', res => {
+      docSummary.innerHTML = marked(res)
+      Toc.clear()
+      initSummary()
+    })
+
+    fetch(location.hash.substr(1) || 'README.md', res => {
+      docContent.innerHTML = marked(res)
+      docToc.innerHTML = Toc.html()
+    })
   })
 
   /**
@@ -27,11 +34,11 @@
         lastClickedLink.className = ''
         lastClickedLink = link
         link.className = 'active'
-        document.querySelector('#jekydocs-content').scrollTop(0)
 
         fetch(link.href.split('#')[1], res => {
-          document.querySelector('#jekydocs-content').innerHTML = marked(res)
-          document.querySelector('#jekydocs-toc').innerHTML = Toc.html()
+          docContent.scrollTop(0)
+          docContent.innerHTML = marked(res)
+          docToc.innerHTML = Toc.html()
         })
       }
     })
