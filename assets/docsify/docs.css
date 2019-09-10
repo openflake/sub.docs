@@ -18,14 +18,8 @@ body {
  * Markdown
  * ------------------------------------------- */
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 30px 0 15px;
-}
-
-h1 {
-  padding: 40px 0 20px;
-  margin: 0 0 30px;
-  border-bottom: #eee 1px solid;
 }
 
 p, blockquote, pre {
@@ -112,8 +106,7 @@ a:hover {
  * Highlight Style: from github-gist
  * ------------------------------------------- */
 
-.hljs-comment,
-.hljs-meta {
+.hljs-comment, .hljs-meta {
   color: #999;
 }
 
@@ -121,31 +114,11 @@ a:hover {
   color: #5c6975;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-type,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-strong,
-.hljs-emphasis,
-.hljs-quote,
-.hljs-title,
-.hljs-attr,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
+.hljs-keyword, .hljs-selector-tag, .hljs-type, .hljs-variable, .hljs-template-variable, .hljs-strong, .hljs-emphasis, .hljs-quote, .hljs-title, .hljs-attr, .hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo {
   color: #df5000;
 }
 
-.hljs-literal,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-attribute,
-.hljs-number,
-.hljs-section,
-.hljs-name,
-.hljs-addition {
+.hljs-literal, .hljs-symbol, .hljs-bullet, .hljs-attribute, .hljs-number, .hljs-section, .hljs-name, .hljs-addition {
   color: #55a532;
 }
 
@@ -166,6 +139,7 @@ aside .logo {
   color: #666;
   background: #eee;
   height: 90px;
+  padding: 20px;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
@@ -219,7 +193,13 @@ aside .logo span {
 #jekydocs-content {
   flex: 1;
   overflow-y: auto;
-  padding: 0 280px 40px 90px;
+  padding: 40px 280px 40px 90px;
+}
+
+#jekydocs-content h1 {
+  padding: 0 0 20px;
+  margin: 0 0 30px;
+  border-bottom: #eee 1px solid;
 }
 
 #jekydocs-toc {
@@ -271,8 +251,55 @@ aside .logo span {
   padding-left: 80px;
 }
 
+#jekydocs-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+}
+
 /* ----------------------------------------------
  * Responsive
  * ------------------------------------------- */
 
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+  #jekydocs-toc {
+    display: none;
+  }
+  #jekydocs-content {
+    padding-right: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+  }
+  aside .logo {
+    height: auto;
+    background: initial;
+  }
+  #jekydocs-content {
+    padding: 30px;
+  }
+  #jekydocs-menu {
+    display: flex;
+  }
+  #jekydocs-summary {
+    position: fixed;
+    background: #fefefe;
+    right: -300px;
+    height: 100%;
+    border-left: #eee 1px solid;
+    transition: 0.3s all;
+  }
+  #jekydocs-summary.active {
+    right: 0;
+  }
+}

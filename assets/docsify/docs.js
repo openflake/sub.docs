@@ -9,6 +9,7 @@
     docSummary = document.querySelector('#jekydocs-summary')
     docContent = document.querySelector('#jekydocs-content')
     docToc = document.querySelector('#jekydocs-toc')
+    docMenu = document.querySelector('#jekydocs-menu')
 
     fetch('SUMMARY', res => {
       docSummary.innerHTML = marked(res)
@@ -20,6 +21,14 @@
       docContent.innerHTML = marked(res)
       docToc.innerHTML = Toc.html()
     })
+
+    docMenu.onclick = function() {
+      docSummary.classList.add('active')
+    }
+
+    docContent.onclick = function() {
+      docSummary.classList.remove('active')
+    }
   })
 
   /**
