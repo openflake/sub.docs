@@ -93,7 +93,7 @@
 ### 资源类
 
 * 主流网站视频下载：[https://www.urlgot.com](https://www.urlgot.com)
-* ~维基百科：[https://wc.yooooo.us~](https://wc.yooooo.us~)
+* ~维基百科：[https://wc.yooooo.us](https://wc.yooooo.us)~
 * 古诗词文：
   * [https://www.gushiwen.org](https://www.gushiwen.org)
   * [http://www.shicimingju.com](http://www.shicimingju.com)
