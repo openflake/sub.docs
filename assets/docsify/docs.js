@@ -40,9 +40,10 @@
     let summary = document.querySelectorAll('#jekydocs-summary a')
     summary.forEach(link => {
       link.onclick = function() {
-        lastClickedLink.className = ''
+        docSummary.classList.remove('active')
+        lastClickedLink.classList.remove('active')
         lastClickedLink = link
-        link.className = 'active'
+        link.classList.add('active')
 
         Progress.start()
         fetch(link.href.split('#')[1], res => {
