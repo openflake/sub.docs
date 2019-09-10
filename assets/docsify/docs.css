@@ -186,7 +186,7 @@ aside .logo span {
   border-left: #42b983 4px solid;
 }
 
-#jekydocs-summary::-webkit-scrollbar {
+#jekydocs-summary::-webkit-scrollbar, #jekydocs-toc::-webkit-scrollbar {
   width: 0;
 }
 
@@ -206,10 +206,12 @@ aside .logo span {
   position: fixed;
   top: 30px;
   right: 30px;
+  bottom: 30px;
   width: 200px;
   font-size: 12px;
   font-weight: 700;
   line-height: 2.2;
+  overflow-y: auto;
 }
 
 #jekydocs-toc a {
