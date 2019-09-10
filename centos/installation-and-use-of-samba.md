@@ -1,8 +1,6 @@
----
-description: Samba 服务可以实现 Linux 和 Windows 之间的数据共享。
----
-
 # Samba 的安装与使用
+
+Samba 服务可以实现 Linux 和 Windows 之间的数据共享。
 
 ### 一. 安装
 
