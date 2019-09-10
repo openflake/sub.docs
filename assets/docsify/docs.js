@@ -61,17 +61,21 @@
    */
   const Toc = {
     toc: [],
-    add: function(obj) {
-      this.toc.push(obj)
+    relativeLevel: [],
+    add: function(entry) {
+      this.toc.push(entry)
+      this.relativeLevel.push(entry.level)
     },
     clear: function() {
       this.toc = []
+      this.relativeLevel = []
     },
     html: function() {
+      let rlv = Array.from(new Set(this.relativeLevel)).sort()
       let html = '<div>文档目录</div>'
       this.toc.forEach((entry, index) => {
         if (index > 0) {
-          html += '<a class="toc-' + entry.level + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
+          html += '<a class="toc-' + rlv.indexOf(entry.level) + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
         }
       })
       this.clear()
