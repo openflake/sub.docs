@@ -120,11 +120,11 @@ aside {
 
 aside h5 {
   color: #ccc;
-  margin: 25px 44px 0;
+  margin: 25px 44px 5px;
 }
 
 aside p {
-  margin: 5px 0;
+  margin: 0;
 }
 
 aside a {

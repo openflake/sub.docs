@@ -2,14 +2,15 @@
 # DOCUMENT SUMMARY
 ---
 
-{% for post in site.pages %}
-  {% assign name = "/" | append: post.name %}
-  {% assign folder = post.path | remove: name | upcase %}
-  {% unless folder == "SUMMARY" or folder == "ASSETS/CSS" %}
-  {% if currfolder != folder %}
-  {% assign currfolder = folder %}
+{% for post in site.pages %}{%
+  assign name = "/" | append: post.name %}{%
+  assign folder = post.path | remove: name | upcase %}{%
+  unless folder == "SUMMARY" or folder == "ASSETS/CSS" %}{%
+  if currfolder != folder %}{%
+  assign currfolder = folder %}
+
 ##### {{ folder }}
-  {% endif %}
-  [{{ post.title }}](#{{ post.path }})
-  {% endunless %}
-{% endfor %}
+{% endif %}
+  [{{ post.title }}](#{{ post.path }}){%
+endunless %}{%
+endfor %}
