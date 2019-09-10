@@ -34,13 +34,11 @@
         lastClickedLink.className = ''
         lastClickedLink = link
         link.className = 'active'
-        Progress.start()
 
         fetch(link.href.split('#')[1], res => {
           docContent.scrollTop = 0
           docContent.innerHTML = marked(res)
           docToc.innerHTML = Toc.html()
-          Progress.done()
         })
       }
     })
@@ -101,12 +99,14 @@
     let xhr = new XMLHttpRequest()
     xhr.open("GET", url, true)
     xhr.send()
+
+    Progress.start()
     xhr.onreadystatechange = function() {
       if (this.readyState == 4) {
+        Progress.done()
         if (this.status == 200) {
           callback(this.responseText)
         } else {
-          Progress.done()
           alert('文档不存在或读取错误')
         }
       }
