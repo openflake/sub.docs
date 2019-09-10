@@ -1,5 +1,5 @@
 ---
-# DOCUMENT SUMMARY
+# DOCUMENT SUMMARY GENERATOR
 ---
 
 {% for post in site.pages %}{%
