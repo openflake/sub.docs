@@ -35,6 +35,8 @@ p, blockquote, pre {
 pre {
   padding: 10px 15px;
   overflow-x: auto;
+  background: #f8f8f8;
+  line-height: 1.8;
 }
 
 code {
@@ -106,6 +108,47 @@ a:hover {
 }
 
 /* ----------------------------------------------
+ * Highlight Style: from github-gist
+ * ------------------------------------------- */
+
+.hljs-comment,
+.hljs-meta {
+  color: #999;
+}
+
+.hljs-string {
+  color: #5c6975;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote,
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #df5000;
+}
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute,
+.hljs-number,
+.hljs-section,
+.hljs-name,
+.hljs-addition {
+  color: #55a532;
+}
+
+/* ----------------------------------------------
  * Layout
  * ------------------------------------------- */
 
@@ -154,7 +197,7 @@ aside .logo span {
   font-weight: 700;
   padding: 5px 40px;
   border-left: #fefefe 4px solid;
-  color: #5C6975;
+  color: #5c6975;
 }
 
 #jekydocs-summary a:hover {
