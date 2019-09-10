@@ -10,6 +10,7 @@
     docContent = document.querySelector('#jekydocs-content')
     docToc = document.querySelector('#jekydocs-toc')
     docMenu = document.querySelector('#jekydocs-menu')
+    docLogo = document.querySelector('.logo')
 
     fetch('SUMMARY', res => {
       docSummary.innerHTML = marked(res)
@@ -21,6 +22,10 @@
       docContent.innerHTML = marked(res)
       docToc.innerHTML = Toc.html()
     })
+
+    docLogo.onclick = function() {
+      loadPage(this.href)
+    }
 
     docMenu.onclick = function() {
       docSummary.classList.add('active')
@@ -46,14 +51,17 @@
         }
         lastClickedLink = link
         link.classList.add('active')
-
-        Progress.start()
-        fetch(link.href.split('#')[1], res => {
-          docContent.scrollTop = 0
-          docContent.innerHTML = marked(res)
-          docToc.innerHTML = Toc.html()
-        })
+        loadPage(link.href)
       }
+    })
+  }
+
+  function loadPage(url) {
+    Progress.start()
+    fetch(url.split('#')[1], res => {
+      docContent.scrollTop = 0
+      docContent.innerHTML = marked(res)
+      docToc.innerHTML = Toc.html()
     })
   }
 
