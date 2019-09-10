@@ -27,6 +27,7 @@
         lastClickedLink.className = ''
         lastClickedLink = link
         link.className = 'active'
+        document.querySelector('main').scrollTo(0)
 
         fetch(link.href.split('#')[1], res => {
           document.querySelector('#jekydocs-content').innerHTML = marked(res)
