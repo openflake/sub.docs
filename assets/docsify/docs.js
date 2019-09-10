@@ -34,14 +34,16 @@
   /**
    * Init click event of summary links
    */
-  let lastClickedLink = {}
+  let lastClickedLink = null
 
   function initSummary() {
     let summary = document.querySelectorAll('#jekydocs-summary a')
     summary.forEach(link => {
       link.onclick = function() {
         docSummary.classList.remove('active')
-        lastClickedLink.classList.remove('active')
+        if (lastClickedLink) {
+          lastClickedLink.classList.remove('active')
+        }
         lastClickedLink = link
         link.classList.add('active')
 
