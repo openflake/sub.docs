@@ -72,11 +72,9 @@
     },
     html: function() {
       let rlv = Array.from(new Set(this.relativeLevel)).sort()
-      let html = '<div>文档目录</div>'
+      let html = ''
       this.toc.forEach((entry, index) => {
-        if (index > 0) {
-          html += '<a class="toc-' + rlv.indexOf(entry.level) + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
-        }
+        html += '<a class="toc-' + rlv.indexOf(entry.level) + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
       })
       this.clear()
       return html
