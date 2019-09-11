@@ -17,9 +17,6 @@
       initSummary()
     })
 
-    document.querySelector('.logo').onclick = function() {
-      loadPage(this.href)
-    }
     document.querySelector('#jekydocs-menu').onclick = function() {
       docSummary.classList.add('active')
     }
@@ -59,6 +56,7 @@
     fetch(url.split('#')[1], res => {
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
+      docToc.innerHTML = ''
       docToc.appendChild(Toc.getFragment())
     })
   }
