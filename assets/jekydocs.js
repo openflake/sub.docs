@@ -70,12 +70,8 @@
   function initMarked() {
     let renderer = new marked.Renderer()
     renderer.heading = function(text, level, raw) {
-      let anchor = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w\\u4e00-\\u9fa5]]+/g, '-')
-      Toc.add({
-        anchor,
-        level,
-        text
-      })
+      let anchor = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w\u4e00-\u9fa5]+/g, '-')
+      Toc.add({ anchor, level, text })
       return `<h${level} id="${anchor}">${text}</h${level}>`
     }
 
