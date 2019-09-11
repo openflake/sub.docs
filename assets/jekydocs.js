@@ -57,7 +57,7 @@
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
       docToc.innerHTML = ''
-      docToc.appendChild(Toc.getFragment())
+      docToc.appendChild(Toc.el())
     })
   }
 
@@ -96,7 +96,7 @@
       this.toc = []
       this.relativeLevel = []
     },
-    getFragment: function() {
+    el: function() {
       let rlv = Array.from(new Set(this.relativeLevel)).sort()
       let fragment = document.createDocumentFragment()
 
