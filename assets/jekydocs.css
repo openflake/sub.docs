@@ -107,7 +107,7 @@ td {
 }
 
 a {
-  color: #42b983;
+  color: #0c7;
   text-decoration: none;
   cursor: pointer;
   font-weight: 700;
@@ -191,14 +191,14 @@ aside .logo span {
 }
 
 #jekydocs-summary a:hover {
-  color: #42b983;
+  color: #0c7;
   text-decoration: none;
 }
 
 #jekydocs-summary a.active {
-  color: #42b983;
+  color: #0c7;
   background: #f5f8fe;
-  border-left: #42b983 4px solid;
+  border-left: #0c7 4px solid;
 }
 
 #jekydocs-summary::-webkit-scrollbar, #jekydocs-toc::-webkit-scrollbar {
@@ -239,12 +239,12 @@ aside .logo span {
 }
 
 #jekydocs-toc a:hover {
-  color: #42b983;
+  color: #0c7;
 }
 
 #jekydocs-toc a.active {
-  color: #42b983;
-  border-left: 1px #42b983 solid;
+  color: #0c7;
+  border-left: 1px #0c7 solid;
 }
 
 #jekydocs-toc a.toc-0 {
