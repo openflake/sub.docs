@@ -9,7 +9,9 @@
     docSummary = document.querySelector('#jekydocs-summary')
     docContent = document.querySelector('#jekydocs-content')
     docToc = document.querySelector('#jekydocs-toc')
-    loadPage(getCurrentHash())
+
+    loadDocPage()
+    window.onpopstate = loadDocPage
 
     fetch('SUMMARY', res => {
       docSummary.innerHTML = marked(res)
@@ -24,14 +26,6 @@
       docSummary.classList.remove('active')
     }
   })
-
-  window.onpopstate = function() {
-    loadPage(getCurrentHash())
-  }
-
-  function getCurrentHash() {
-    return location.hash || '#README.md'
-  }
 
   /**
    * Init click event of summary links
@@ -51,9 +45,9 @@
     })
   }
 
-  function loadPage(url) {
-    console.log(url)
-    fetch(url.split('#')[1], res => {
+  function loadDocPage() {
+    let hash = location.hash || '#README.md'
+    fetch(hash.substr(1), res => {
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
       docToc.innerHTML = ''
