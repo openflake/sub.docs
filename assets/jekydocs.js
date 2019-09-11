@@ -39,17 +39,16 @@
   /**
    * Init click event of summary links
    */
-  let lastClickedLink = null
-
+  let lastSummaryIndex = null
   function initSummary() {
     let summary = document.querySelectorAll('#jekydocs-summary a')
     summary.forEach(link => {
       link.onclick = function() {
         docSummary.classList.remove('active')
-        if (lastClickedLink) {
-          lastClickedLink.classList.remove('active')
+        if (lastSummaryIndex) {
+          lastSummaryIndex.classList.remove('active')
         }
-        lastClickedLink = link
+        lastSummaryIndex = link
         link.classList.add('active')
         loadPage(link.href)
       }
@@ -60,7 +59,7 @@
     fetch(url.split('#')[1], res => {
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
-      docToc.innerHTML = Toc.html()
+      docToc.appendChild(Toc.getFragment())
     })
   }
 
@@ -89,6 +88,8 @@
   const Toc = {
     toc: [],
     relativeLevel: [],
+    lastAnchor: null,
+
     add: function(entry) {
       this.toc.push(entry)
       this.relativeLevel.push(entry.level)
@@ -97,14 +98,30 @@
       this.toc = []
       this.relativeLevel = []
     },
-    html: function() {
+    getFragment: function() {
       let rlv = Array.from(new Set(this.relativeLevel)).sort()
-      let html = ''
-      this.toc.forEach((entry, index) => {
-        html += '<a class="toc-' + rlv.indexOf(entry.level) + '" href="#' + entry.anchor + '">' + entry.text + '<a>'
+      let fragment = document.createDocumentFragment()
+
+      this.toc.forEach(entry => {
+        let a = document.createElement('a')
+        a.className = 'toc-' + rlv.indexOf(entry.level)
+        a.innerHTML = entry.text
+        fragment.appendChild(a)
+
+        a.onclick = () => {
+          if (this.lastAnchor) {
+            this.lastAnchor.classList.remove('active')
+          }
+          this.lastAnchor = a
+          a.classList.add('active')
+          docContent.scrollTo({
+            top: document.getElementById(entry.anchor).offsetTop,
+            behavior: 'smooth'
+          })
+        }
       })
       this.clear()
-      return html
+      return fragment
     }
   }
 
