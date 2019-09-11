@@ -47,7 +47,6 @@
         }
         lastSummaryIndex = link
         link.classList.add('active')
-        loadPage(link.href)
       }
     })
   }
