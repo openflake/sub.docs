@@ -53,6 +53,7 @@
   }
 
   function loadPage(url) {
+    console.log(url)
     fetch(url.split('#')[1], res => {
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
