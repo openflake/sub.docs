@@ -9,8 +9,7 @@
     docSummary = document.querySelector('#jekydocs-summary')
     docContent = document.querySelector('#jekydocs-content')
     docToc = document.querySelector('#jekydocs-toc')
-    docMenu = document.querySelector('#jekydocs-menu')
-    docLogo = document.querySelector('.logo')
+    loadPage(getCurrentHash())
 
     fetch('SUMMARY', res => {
       docSummary.innerHTML = marked(res)
@@ -18,23 +17,24 @@
       initSummary()
     })
 
-    fetch(location.hash.substr(1) || 'README.md', res => {
-      docContent.innerHTML = marked(res)
-      docToc.innerHTML = Toc.html()
-    })
-
-    docLogo.onclick = function() {
+    document.querySelector('.logo').onclick = function() {
       loadPage(this.href)
     }
-
-    docMenu.onclick = function() {
+    document.querySelector('#jekydocs-menu').onclick = function() {
       docSummary.classList.add('active')
     }
-
     docContent.onclick = function() {
       docSummary.classList.remove('active')
     }
   })
+
+  window.onpopstate = function() {
+    loadPage(getCurrentHash())
+  }
+
+  function getCurrentHash() {
+    return location.hash || '#README.md'
+  }
 
   /**
    * Init click event of summary links
@@ -57,7 +57,6 @@
   }
 
   function loadPage(url) {
-    Progress.start()
     fetch(url.split('#')[1], res => {
       docContent.scrollTop = 0
       docContent.innerHTML = marked(res)
@@ -121,6 +120,7 @@
     xhr.open("GET", url, true)
     xhr.send()
 
+    Progress.start()
     xhr.onreadystatechange = function() {
       if (this.readyState == 4) {
         Progress.done()
