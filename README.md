@@ -14,9 +14,13 @@
 ### 工具类
 
 * PNG Image Compress: [https://tinypng.com](https://tinypng.com)
+* SVG Compress: https://www.zhangxinxu.com/sp/svgo
 * Javascript Compress:
   * [https://jscompress.com](https://jscompress.com)
+  * https://javascript-minifier.com
   * [https://tool.css-js.com](https://tool.css-js.com)
+  * https://www.minifier.org
+* ICO Converter: https://www.icoconverter.com
 * Image Vectorizer:
   * [https://www.vectorizer.io](https://www.vectorizer.io)
   * [https://vectormagic.com](https://vectormagic.com)
@@ -33,6 +37,9 @@
   * [http://www.gpsspg.com/maps.htm](http://www.gpsspg.com/maps.htm)
 * 草料二维码：[https://cli.im](https://cli.im)
 * 特殊符号：[http://www.pic35.com](http://www.pic35.com)
+* 音频转换：
+  - https://www.aconvert.com/cn/audio/m4a-to-mp3
+  - https://online-audio-converter.com/cn
 
 ### 设计类
 
