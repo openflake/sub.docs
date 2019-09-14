@@ -67,6 +67,8 @@ docker rmi <镜像ID>
 docker ps -a
 # 自启动容器
 docker update --restart=always <容器ID>|<容器名称>
+# 取消自启动
+docker update --restart=no <容器ID>|<容器名称>
 # 查看容器信息
 docker inspect <容器ID>|<容器名称>
 # 查看容器日志
@@ -77,5 +79,7 @@ docker start <容器ID>|<容器名称>
 docker stop <容器ID>|<容器名称>
 # 删除容器
 docker rm <容器ID>|<容器名称>
+# 启动 docker
+systemctl start docker
 ```
 
