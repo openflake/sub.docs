@@ -1,6 +1,6 @@
 # V2Ray 的安装与使用
 
-### 安装服务端
+### 一. 安装服务端
 
 ```bash
 curl -O https://install.direct/go.sh
@@ -14,11 +14,11 @@ chmod +x go.sh
 systemctl start v2ray
 ```
 
-### 安装客户端
+### 二. 安装客户端
 
 进入 https://github.com/2dust/v2rayN/releases 页面下载 v2rayN-Core.zip，解压至本地后运行`v2rayN.exe`。
 
-#### 添加 VMess 服务器
+#### 1. 添加 VMess 服务器
 
 在客户端界面上点击服务器图标->添加 VMess 服务器，基本上只需填写以下四个值，其他默认：
 
@@ -27,15 +27,15 @@ systemctl start v2ray
 - 用户ID：服务端配置文件中的 UUID
 - 额外ID：服务端配置文件中的 alterId
 
-#### 参数设置
+#### 2. 参数设置
 
 点击界面中的参数设置图标，记住第一个Tab页“基础设置”的本地监听端口；点开第二个Tab页“路由设置”，路由模式选择“绕过局域网及大陆地址”。
 
-#### 启动HTTP代理
+#### 3. 启动HTTP代理
 
 右键点击托盘图标，点击“启用HTTP代理”，代理模式设为“开启PAC”。
 
-#### 设置浏览器代理
+#### 4. 设置浏览器代理
 
 如果使用 Chrome 浏览器，可以安装 Proxy SwitchyOmega 扩展程序以设置代理，也可以采用如下方式：
 
@@ -47,11 +47,11 @@ systemctl start v2ray
 
 设置完毕之后，点击该快捷方式即可科学上网。
 
-### Websocket, TLS 和 CDN 
+### 三. Websocket, TLS 和 CDN 
 
 为尽可能降低被墙的风险，还可以在以上基础上增加 Websocket, TLS 和 CDN 部署，其原理是将服务器伪装成 Web 站点，通过 TLS 和 Websocket 建立连接，同时利用 CDN 隐藏服务器的真实IP。
 
-#### 增加 Websocket 配置
+#### 1. 增加 Websocket 配置
 
 编辑 v2ray 配置文件 `/etc/v2ray/config.json`，在 `inbounds` 中增加以下内容（与 `settings` 并列，注意格式中的逗号）：
 
@@ -64,7 +64,7 @@ systemctl start v2ray
 }
 ```
 
-#### 增加 Nginx 配置
+#### 2. 增加 Nginx 配置
 
 `vi /etc/nginx/conf.d/v2ray.conf`创建新的配置文件，内容如下：
 
@@ -102,11 +102,11 @@ server {
 
 其中与 SSL 证书相关的配置参见 https://docs.zerg.cc/#centos/install-web-services-in-centos.md 最后章节。
 
-#### 增加 CDN 设置
+#### 3. 增加 CDN 设置
 
 以 Cloudflare 为例，给域名增加A记录指向服务器IP，并点亮橙色云朵图标。
 
-#### 重新配置客户端
+#### 4. 重新配置客户端
 
 重启 v2ray 服务端、重启 Nginx、CDN 生效之后，回到客户端修改服务器信息。
 
