@@ -10,7 +10,7 @@ chmod +x go.sh
 
 完成后会显示入站端口和UUID信息，可先复制下来备用也可以后续在`/etc/v2ray/config.json`配置文件中查看。启动 v2ray：
 
-```
+```bash
 systemctl start v2ray
 ```
 
@@ -41,7 +41,7 @@ systemctl start v2ray
 
 新建 chrome.exe 快捷方式，右键点击属性，在目标栏后面增加启动参数（与原值之间有空格），其中端口号是“基础设置”中的本地监听端口。
 
-```
+```bash
 --proxy-server="socks5://127.0.0.1:10808"
 ```
 
@@ -55,7 +55,7 @@ systemctl start v2ray
 
 编辑 v2ray 配置文件 `/etc/v2ray/config.json`，在 `inbounds` 中增加以下内容（与 `settings` 并列，注意格式中的逗号）：
 
-```
+```json
 "streamSettings": {
   "network": "ws",
   "wsSettings": {
@@ -68,7 +68,7 @@ systemctl start v2ray
 
 `vi /etc/nginx/conf.d/v2ray.conf`创建新的配置文件，内容如下：
 
-```
+```nginx
 server {
   listen 80;
   server_name warn.ga;
