@@ -212,8 +212,8 @@ aside .logo span {
 }
 
 #jekydocs-content h1 {
-  padding: 0 0 20px;
-  margin: 0 0 30px;
+  padding: 0 0 30px;
+  margin: 0 0 40px;
   line-height: 1.6;
   border-bottom: #eee 1px solid;
 }
