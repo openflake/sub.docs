@@ -147,12 +147,12 @@ aside {
   width: 300px;
   height: 100vh;
   background: #fefefe;
-  box-shadow: 0 0 12px 0 rgba(130, 150, 170, 0.2);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 aside .logo {
   color: #666;
-  background: #eee;
+  border-bottom: #f3f3f3 1px solid;
   height: 90px;
   padding: 20px;
   font-size: 20px;
