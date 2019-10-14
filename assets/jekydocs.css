@@ -152,7 +152,6 @@ aside {
 
 aside .logo {
   color: #666;
-  border-bottom: #eee 1px solid;
   height: 90px;
   padding: 20px;
   font-size: 20px;
@@ -161,6 +160,7 @@ aside .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 20px 0 #f3f3f3
 }
 
 aside .logo span {
