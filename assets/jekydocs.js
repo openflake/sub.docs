@@ -125,10 +125,10 @@
     xhr.open("GET", url, true)
     xhr.send()
 
-    Progress.start()
+    Toast.progress.start()
     xhr.onreadystatechange = function() {
       if (this.readyState == 4) {
-        Progress.done()
+        Toast.progress.done()
         if (this.status == 200) {
           callback(this.responseText)
         } else {
