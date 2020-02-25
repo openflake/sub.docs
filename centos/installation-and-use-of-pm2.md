@@ -1,12 +1,12 @@
 # PM2 安装与使用
 
-### 全局安装
+### 一. 全局安装
 
 ```
 npm install -g pm2
 ```
 
-### 启动 node 应用
+### 二. 启动 node 应用
 
 指定 js 入口启动，其中 `--name` 为应用名称，`--watch` 监视文件变化（即热部署）。
 ```
@@ -17,7 +17,7 @@ pm2 start /path/to/main.js --name="appname" --watch
 pm2 start --name="appname" npm -- start --watch
 ```
 
-### 设置开机启动
+### 三. 设置开机启动
 
 1. 保存当前应用进程列表到文件
 ```
@@ -32,7 +32,7 @@ pm2 startup
 pm2 unstartup
 ```
 
-### 其他命令
+### 四. 其他命令
 
 1. 显示所有应用程序
 ```
@@ -60,7 +60,6 @@ pm2 logs appname
 pm2 restart appname
 pm2 stop appname
 pm2 delete appname
-
 pm2 restart all
 pm2 stop all
 pm2 delete all
