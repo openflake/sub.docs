@@ -69,7 +69,6 @@ pm2 delete all
 ```
 # 启动 4 个应用实例并自动负载均衡（cluster mode）
 pm2 start main.js -i 4
-
 # 重启 cluster mode 下的所有应用
 pm2 reload all
 ```
