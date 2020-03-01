@@ -52,7 +52,7 @@ autossh -M 0 -o "ServerAliveInterval=30" -o "ServerAliveCountMax=3" -fCNR 0.0.0.
 ```
 
 #### 4. 开机启动
-创建文件`/usr/lib/systemd/system/ssh_tunnel.service`，内容如下：
+创建文件`/usr/lib/systemd/system/ssh-tunnel.service`，内容如下：
 ```
 [Unit]
 Description=Auto SSH Local Tunnel
@@ -72,8 +72,8 @@ WantedBy=multi-user.target
 
 然后就是启动：
 ```
-systemctl enable ssh_tunnel
-systemctl start ssh_tunnel
+systemctl enable ssh-tunnel
+systemctl start ssh-tunnel
 ```
 
 #### 5. Nginx 反向代理
