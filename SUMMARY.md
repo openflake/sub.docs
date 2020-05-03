@@ -15,6 +15,7 @@
 * [安装 BBR & SSR](centos-1/installation-of-bbr-and-ssr.md)
 * [Samba 的安装与使用](centos-1/installation-and-use-of-samba.md)
 * [如何在 CentOS 上增加交换分区](centos-1/how-to-add-swap-space-on-centos.md)
+* [Syncthing 的安装与使用](centos-1/syncthing-de-an-zhuang-yu-shi-yong.md)
 
 ## windows <a id="windows-1"></a>
 
