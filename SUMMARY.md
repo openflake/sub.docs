@@ -4,10 +4,10 @@
 
 ## centos <a id="centos-1"></a>
 
-* [V2Ray 的安装与使用](centos-1/installation-and-use-of-v2ray.md)
-* [内网穿透技术简介](centos-1/did-your-intranet-penetrate.md)
 * [CentOS 常用命令](centos-1/commands-of-centos.md)
 * [Cron 定时服务和数据库备份](centos-1/timing-and-backup-in-centos.md)
+* [V2Ray 的安装与使用](centos-1/installation-and-use-of-v2ray.md)
+* [内网穿透技术简介](centos-1/did-your-intranet-penetrate.md)
 * [Docker 安装与使用](centos-1/installation-and-use-of-docker.md)
 * [PM2 安装与使用](centos-1/installation-and-use-of-pm2.md)
 * [Transmission 的安装与使用](centos-1/installation-and-use-of-transmission.md)
