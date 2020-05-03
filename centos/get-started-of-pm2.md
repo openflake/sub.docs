@@ -86,3 +86,4 @@ pm2 start --name="appname" npm -- start --watch
    # 重启 cluster mode 下的所有应用
    pm2 reload all
    ```
+

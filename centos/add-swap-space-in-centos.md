@@ -132,3 +132,4 @@ swapoff -v /swapfile
 ```text
 rm /swapfile
 ```
+
