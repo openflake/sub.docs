@@ -1,4 +1,3 @@
-@@ -1,32 +0,0 @@
 # Table of contents
 
 * [收藏夹](README.md)
@@ -20,13 +19,14 @@
 
 ## windows
 
-* [Win10 系统字体更换](change-win10-system-fonts.md)
-* [Vue 项目搭建](building-project-with-vue.md)
-* [Jekyll 环境搭建](jekyll-startup-in-windows.md)
-* [Win10 初始化偏好设置](preferences-init-of-win10.md)
+* [Win10 系统字体更换](windows/win10-xi-tong-zi-ti-geng-huan.md)
+* [Vue 项目搭建](windows/vue-xiang-mu-da-jian.md)
+* [Jekyll 环境搭建](windows/jekyll-huan-jing-da-jian.md)
+* [Win10 初始化偏好设置](windows/win10-chu-shi-hua-pian-hao-she-zhi.md)
 
 ## others
 
 * [NAS 基础知识](others/basic-knowledge-of-nas.md)
 * [Nginx Location 匹配模式](others/nginx-location-pattern.md)
 * [HTTP 响应代码](others/http-status-code.md)
+
