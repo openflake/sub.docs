@@ -5,12 +5,12 @@
 ## centos
 
 * [Web 服务安装](centos/get-started-of-web-services.md)
+* [Cron 定时服务和数据库备份](centos/cron-and-backup-in-centos.md)
 * [Samba 安装与使用](centos/get-started-of-samba.md)
 * [PM2 安装与使用](centos/get-started-of-pm2.md)
 * [Docker 安装与使用](centos/get-started-of-docker.md)
 * [Syncthing 安装与使用](centos/get-started-of-syncthing.md)
 * [Transmission 安装与使用](centos/get-started-of-transmission.md)
-* [Cron 定时服务和数据库备份](centos/cron-and-backup-in-centos.md)
 * [V2ray 安装与使用](centos/get-started-of-v2ray.md)
 * [安装 BBR & SSR](centos/get-started-of-bbr-and-ssr.md)
 * [如何在 CentOS 上增加交换分区](centos/add-swap-space-in-centos.md)
