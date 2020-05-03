@@ -86,4 +86,3 @@ userdel -r xxx
 find / -name xxx
 rm -rf xxx
 ```
-

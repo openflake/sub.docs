@@ -1,4 +1,4 @@
-# Transmission 的安装与使用
+# Transmission 安装与使用
 
 [Transmission](https://transmissionbt.com) 是一种 BitTorrent 客户端，以跨平台的服务端和简洁的用户界面著称。
 
@@ -199,4 +199,3 @@ systemctl start transmission-daemon
     "trash-original-torrent-files": true
 }
 ```
-

@@ -61,4 +61,3 @@ location / {
   try_files $uri /index.html;
 }
 ```
-

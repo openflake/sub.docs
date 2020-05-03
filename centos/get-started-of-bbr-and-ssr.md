@@ -26,4 +26,3 @@ chmod +x shadowsocks-all.sh
 
 systemctl start shadowsocks-r
 ```
-

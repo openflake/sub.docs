@@ -1,4 +1,4 @@
-# Samba 的安装与使用
+# Samba 安装与使用
 
 Samba 服务可以实现 Linux 和 Windows 之间的数据共享。
 
@@ -155,4 +155,3 @@ net use * /del /y
 ```
 
 如果 Samba 服务器配置正确，但 Windows 始终登录失败，可运行`secpol.msc`依次打开“安全设置-&gt;本地策略-&gt;安全选项”，找到“网络安全：LAN管理器身份验证级别”，修改为“仅发送NTLMv2响应，拒绝LM和NTLM”。
-

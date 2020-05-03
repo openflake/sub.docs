@@ -14,4 +14,3 @@
 打开命令行输入 `gem install jekyll`，安装完成后输入 `jekyll -v` 确认是否成功。如果上一步骤更改了 Ruby 的默认安装路径，则此步骤很有可能失败。
 
 命令行继续输入 `gem install jekyll-paginate` 安装分页插件。
-
