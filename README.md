@@ -4,6 +4,10 @@
 
 ### 服务类
 
+* 谷歌记事本：https://keep.google.com
+* 谷歌相册：https://photo.google.com
+* 谷歌云端硬盘：https://drive.google.com
+* 谷歌文档：https://docs.google.com
 * 百度地图服务：https://lbsyun.baidu.com
 * 腾讯地图服务：https://lbs.qq.com
 * 腾讯短信服务：https://console.qcloud.com/sms
@@ -13,14 +17,18 @@
 
 ### 工具类
 
-* PNG Image Compress: [https://tinypng.com](https://tinypng.com)
-* SVG Compress: [https://www.zhangxinxu.com/sp/svgo](https://www.zhangxinxu.com/sp/svgo)
-* Javascript Compress:
-  * [https://jscompress.com](https://jscompress.com)
-  * [https://javascript-minifier.com](https://javascript-minifier.com)
-  * [https://tool.css-js.com](https://tool.css-js.com)
-  * [https://www.minifier.org](https://www.minifier.org)
-* ICO Converter: [https://www.icoconverter.com](https://www.icoconverter.com)
+* PNG Image Compress: https://tinypng.com
+* SVG Editor: https://c.runoob.com/more/svgeditor
+* SVG Compress: 
+  * https://jakearchibald.github.io/svgomg
+  * https://www.zhangxinxu.com/sp/svgo
+* JS/CSS Compress:
+  * https://compress.now.sh
+  * https://jscompress.com
+  * https://javascript-minifier.com
+  * https://tool.css-js.com
+  * https://www.minifier.org
+* ICO Converter: https://www.icoconverter.com
 * Image Vectorizer:
   * [https://www.vectorizer.io](https://www.vectorizer.io)
   * [https://vectormagic.com](https://vectormagic.com)
