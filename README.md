@@ -4,12 +4,12 @@
 
 ### 服务类
 
-* 百度地图服务：[https://lbsyun.baidu.com](https://lbsyun.baidu.com)
-* 腾讯地图服务：[https://lbs.qq.com](https://lbs.qq.com)
-* 腾讯短信服务：[https://console.qcloud.com/sms](https://console.qcloud.com/sms)
-* 腾讯网站分析：[https://ta.qq.com](https://ta.qq.com)
-* 微信公众平台：[https://mp.weixin.qq.com](https://mp.weixin.qq.com)
-* 微信支付平台：[https://pay.weixin.qq.com](https://pay.weixin.qq.com)
+* 百度地图服务：https://lbsyun.baidu.com
+* 腾讯地图服务：https://lbs.qq.com
+* 腾讯短信服务：https://console.qcloud.com/sms
+* 腾讯网站分析：https://ta.qq.com
+* 微信公众平台：https://mp.weixin.qq.com
+* 微信支付平台：https://pay.weixin.qq.com
 
 ### 工具类
 
