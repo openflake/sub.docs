@@ -5,7 +5,7 @@
 ## centos
 
 * [CentOS 常用命令](centos/commands-of-centos.md)
-* [Cron 定时服务和数据库备份](centos/timing-and-backup-in-centos.md)
+* [Cron 定时服务和数据库备份](centos/cron-and-backup-in-centos.md)
 * [V2Ray 的安装与使用](centos/installation-and-use-of-v2ray.md)
 * [内网穿透技术简介](centos/did-your-intranet-penetrate.md)
 * [Docker 安装与使用](centos/installation-and-use-of-docker.md)
