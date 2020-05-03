@@ -87,7 +87,7 @@ systemctl stop php-fpm
 systemctl restart php-fpm
 ```
 
-### 修改启动权限
+### 1. 修改启动权限
 
 在某些特殊情况下，例如 PHP 代码调用较高权限的 Shell 命令时，需要以 root 身份启动 php-fpm，打开配置文件：
 
@@ -114,11 +114,11 @@ vi /usr/lib/systemd/system/php-fpm.service
 ExecStart=/usr/sbin/php-fpm --nodaemonize -R --fpm-config /etc/php-fpm.conf
 ```
 
-### 与 Nginx 集成
+### 2. 与 Nginx 集成
 
 查看 php-fpm 默认配置`cat /etc/php-fpm.d/www.conf | grep -i 'listen ='`，若返回结果为`listen = 127.0.0.1:9000`，表明监听端口为9000，Nginx配置中的PHP解析请求转发到 127.0.0.0:9000 处理即可，通常无需特别处理。
 
-### 多个 php-fpm 主进程
+### 3. 多个 php-fpm 主进程
 
 找到`php-fpm.d/www.conf`，复制一份改名为例如`api.conf`，将其中`[www]`及`listen = 127.0.0.1:9000`改为`[api]`及`listen = 127.0.0.1:9001`，配置 nginx 中 proxy\_pass 的端口为9001，重启 php-fpm 和 nginx。
 
@@ -142,7 +142,7 @@ systemctl stop mysqld
 systemctl restart mysqld
 ```
 
-### 安全性设置
+### 1. 安全性设置
 
 ```bash
 mysql_secure_installation
@@ -158,18 +158,18 @@ mysql_secure_installation
 6. 是否重载权限表：Y
 7. 完成。
 
-### 设置远程连接权限
+### 2. 设置远程连接权限
 
 ```sql
 GRANT ALL PRIVILEGES ON databasename.* TO username@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 flush privileges;
 ```
 
-### 设置字符集
+### 3. 设置字符集
 
 `vi /etc/my.cnf` 打开配置文件，在 `[mysqld]` 段增加：`character_set_server = utf8`，重启MySQL后登入mysql查看编码设置结果：`show variables like 'character%';`
 
-### 导出数据库
+### 4. 导出数据库
 
 ```sql
 mysqldump -uroot -p databasename > /file/path/filename.sql
@@ -179,13 +179,13 @@ mysqldump -uroot -p databasename > /file/path/filename.sql
 
 Memcached分为服务端和客户端（PHP扩展），需分别安装。客户端有Memcache和Memcached之分，两者略有区别，后者是前者的升级版，但Windows下无法使用。在PHP代码中，Memcache使用connect方法连接服务端，Memcached则使用addServer方法。Memcached扩展可与PHP其他扩展一起安装，参见PHP章节。
 
-### 安装服务端
+### 1. 安装服务端
 
 ```bash
 yum -y install memcached
 ```
 
-### 查看配置项
+### 2. 查看配置项
 
 ```bash
 cat /etc/sysconfig/memcached
@@ -200,7 +200,7 @@ systemctl stop memcached
 systemctl restart memcached
 ```
 
-### 命令行连接
+### 3. 命令行连接
 
 需先安装 Telnet：
 
