@@ -1,13 +1,13 @@
 # Docker 安装与使用
 
-### 一. 安装 Docker
+## 一. 安装 Docker
 
 ```bash
 yum -y install docker
 docker version
 ```
 
-### 二. 安装 Jar 程序镜像
+## 二. 安装 Jar 程序镜像
 
 首先，将 springboot 的源码打包成可执行性 jar 文件并上传到服务器，在 jar 的同级目录下创建 dockerfile 文件，内容如下：
 
@@ -46,7 +46,7 @@ docker run -d --net=host --name <容器名称> <镜像名称>
 docker run -d --net=host --name fallboot fallboot
 ```
 
-### 三. 安装 Memcached 镜像
+## 三. 安装 Memcached 镜像
 
 ```bash
 docker pull memcached
@@ -54,7 +54,7 @@ docker run -d -p 11211:11211 --name memcached memcached
 # docker run -d --net=host --name memcached memcached
 ```
 
-### 四. 常用命令
+## 四. 常用命令
 
 ```bash
 # 搜索镜像
