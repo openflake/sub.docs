@@ -1,23 +1,23 @@
 # Vue 项目搭建
 
-### 一. 安装 Nodejs
+## 一. 安装 Nodejs
 
 略。
 
-### 二. 安装 Vue 命令
+## 二. 安装 Vue 命令
 
 ```bash
 npm install -g @vue/cli
 ```
 
-### 三. 创建 Vue 项目
+## 三. 创建 Vue 项目
 
 ```bash
 # 创建过程中选择 babel 可兼容更多浏览器
 vue create webapp
 ```
 
-### 四. 手动安装插件
+## 四. 手动安装插件
 
 ```bash
 cd webapp
@@ -29,7 +29,7 @@ npm install vuex --save
 npm install axios --save
 ```
 
-### 五. 常用命令
+## 五. 常用命令
 
 ```bash
 # 运行 Vue 服务
@@ -40,7 +40,7 @@ npm run build
 npm cache clean --force
 ```
 
-### 六. 修改 Vue 配置
+## 六. 修改 Vue 配置
 
 在 `node_modules\@vue\cli-service\lib\options.js` 文件中，找到如下选项：
 
@@ -53,7 +53,7 @@ productionSourceMap: false
 devServer: {}
 ```
 
-### 七. 单一入口配置
+## 七. 单一入口配置
 
 ```text
 # ngnix.conf

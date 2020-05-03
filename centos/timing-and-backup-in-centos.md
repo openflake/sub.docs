@@ -2,14 +2,14 @@
 
 CentOS的定时服务名叫crontab，首先在命令行输入 `crontab` 检查是否已安装，如果提 示`command not found` 说明未安装。
 
-### 一. 安装 Crontab
+## 一. 安装 Crontab
 
 ```bash
 yum install vixie-cron
 yum install crontabs
 ```
 
-### 二. 日常启停
+## 二. 日常启停
 
 ```bash
 systemctl start crond
@@ -17,7 +17,7 @@ systemctl stop crond
 systemctl restart crond
 ```
 
-### 三. 创建备份脚本
+## 三. 创建备份脚本
 
 例如创建脚本文件 backup.sh，内容如下：
 
@@ -55,7 +55,7 @@ vi backup.sh
 :wq
 ```
 
-### 四. 添加或修改定时任务
+## 四. 添加或修改定时任务
 
 命令行中输入 `crontab -e`，在文件内添加或修改以下内容：
 

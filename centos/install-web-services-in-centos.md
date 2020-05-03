@@ -1,6 +1,6 @@
 # Web 服务安装
 
-### 一. 安装 Nginx
+## 一. 安装 Nginx
 
 ```bash
 yum install -y nginx
@@ -16,7 +16,7 @@ systemctl restart nginx
 client_max_body_size 2M
 ```
 
-### 二. 安装 Apache
+## 二. 安装 Apache
 
 ```bash
 yum install -y httpd
@@ -35,7 +35,7 @@ systemctl restart httpd
 </IfModule>
 ```
 
-### 三. 安装 PHP
+## 三. 安装 PHP
 
 查看当前已安装的 PHP 包，如果存在则先卸载：
 
@@ -87,7 +87,7 @@ systemctl stop php-fpm
 systemctl restart php-fpm
 ```
 
-#### 修改启动权限
+### 修改启动权限
 
 在某些特殊情况下，例如 PHP 代码调用较高权限的 Shell 命令时，需要以 root 身份启动 php-fpm，打开配置文件：
 
@@ -114,17 +114,17 @@ vi /usr/lib/systemd/system/php-fpm.service
 ExecStart=/usr/sbin/php-fpm --nodaemonize -R --fpm-config /etc/php-fpm.conf
 ```
 
-#### 与 Nginx 集成
+### 与 Nginx 集成
 
 查看 php-fpm 默认配置`cat /etc/php-fpm.d/www.conf | grep -i 'listen ='`，若返回结果为`listen = 127.0.0.1:9000`，表明监听端口为9000，Nginx配置中的PHP解析请求转发到 127.0.0.0:9000 处理即可，通常无需特别处理。
 
-#### 多个 php-fpm 主进程
+### 多个 php-fpm 主进程
 
 找到`php-fpm.d/www.conf`，复制一份改名为例如`api.conf`，将其中`[www]`及`listen = 127.0.0.1:9000`改为`[api]`及`listen = 127.0.0.1:9001`，配置 nginx 中 proxy\_pass 的端口为9001，重启 php-fpm 和 nginx。
 
 在 Windows 下，同一 Nginx 的不同 Server 之间通过 curl 请求时会阻塞超时，原因是各 Server 共享 php-fpm 的 9000 端口，解决方法就是上述开启新端口供 Server 使用，但 CentOS 下不会出现这种情况，所以无需启动多个端口。
 
-### 四. 安装 MySQL
+## 四. 安装 MySQL
 
 切换源并安装社区版：
 
@@ -142,7 +142,7 @@ systemctl stop mysqld
 systemctl restart mysqld
 ```
 
-#### 安全性设置
+### 安全性设置
 
 ```bash
 mysql_secure_installation
@@ -158,34 +158,34 @@ mysql_secure_installation
 6. 是否重载权限表：Y
 7. 完成。
 
-#### 设置远程连接权限
+### 设置远程连接权限
 
 ```sql
 GRANT ALL PRIVILEGES ON databasename.* TO username@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 flush privileges;
 ```
 
-#### 设置字符集
+### 设置字符集
 
 `vi /etc/my.cnf` 打开配置文件，在 `[mysqld]` 段增加：`character_set_server = utf8`，重启MySQL后登入mysql查看编码设置结果：`show variables like 'character%';`
 
-#### 导出数据库
+### 导出数据库
 
 ```sql
 mysqldump -uroot -p databasename > /file/path/filename.sql
 ```
 
-### 五. 安装 Memcahced
+## 五. 安装 Memcahced
 
 Memcached分为服务端和客户端（PHP扩展），需分别安装。客户端有Memcache和Memcached之分，两者略有区别，后者是前者的升级版，但Windows下无法使用。在PHP代码中，Memcache使用connect方法连接服务端，Memcached则使用addServer方法。Memcached扩展可与PHP其他扩展一起安装，参见PHP章节。
 
-#### 安装服务端
+### 安装服务端
 
 ```bash
 yum -y install memcached
 ```
 
-#### 查看配置项
+### 查看配置项
 
 ```bash
 cat /etc/sysconfig/memcached
@@ -200,7 +200,7 @@ systemctl stop memcached
 systemctl restart memcached
 ```
 
-#### 命令行连接
+### 命令行连接
 
 需先安装 Telnet：
 
@@ -211,7 +211,7 @@ yum install telnet-server.x86_64 telnet.x86_64
 
 通过`telnet 127.0.0.1 11211`进入控制台，输入`stats`查看运行数据，`stats reset`清空运行数据。
 
-### 六. 安装泛域名证书
+## 六. 安装泛域名证书
 
 [Let's Encrypt](https://letsencrypt.org) 致力于清除 Web 安全障碍，宣布 ACME v2 正式支持[免费通配符证书](https://www.sslforfree.com)。详细安装及配置过程参见：[https://github.com/Neilpang/acme.sh/wiki/说明](https://github.com/Neilpang/acme.sh/wiki/说明) ，以下仅针对个人情况作记录：
 
@@ -228,6 +228,7 @@ acme.sh --installcert -d zerg.cc -d *.zerg.cc   \
 ```
 
 使用 Cloudflare 解析的域名需修改其中三行语句：
+
 ```bash
 export CF_Key="xxxxxx"
 export CF_Email="xxx@xxx.com"
@@ -245,3 +246,4 @@ Let's Encrypt 免费证书有效期为三个月，acme已自动加入系统定�
 ```text
 acme.sh --renew --dns dns_dp -d zerg.cc -d *.zerg.cc
 ```
+

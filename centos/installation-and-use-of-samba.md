@@ -2,13 +2,13 @@
 
 Samba 服务可以实现 Linux 和 Windows 之间的数据共享。
 
-### 一. 安装
+## 一. 安装
 
 ```bash
 yum -y install samba
 ```
 
-### 二. 创建用户
+## 二. 创建用户
 
 在创建Samba用户之前，必须先创建系统用户，再由系统用户转为Samba用户。此例中，用户组为SAMBA，用户名为admin。
 
@@ -27,7 +27,7 @@ cat /etc/passwd   # 查看系统用户
 userdel -r admin  # 删除系统用户
 ```
 
-### 三. 创建共享目录
+## 三. 创建共享目录
 
 ```bash
 mkdir /mnt/nas/MEDIA
@@ -36,7 +36,7 @@ chown -R admin:SAMBA /mnt/nas/MEDIA
 chmod 777 /mnt/nas/MEDIA
 ```
 
-### 四. 配置文件
+## 四. 配置文件
 
 备份并打开 Samba 配置文件：
 
@@ -102,7 +102,7 @@ wide links = yes
 unix extensions = no
 ```
 
-### 五. 开机启动及日常启停
+## 五. 开机启动及日常启停
 
 ```bash
 systemctl enable smb
@@ -112,7 +112,7 @@ systemctl restart smb
 systemctl status smb
 ```
 
-### 六. 防火墙设置
+## 六. 防火墙设置
 
 设置防火墙允许Samba服务通过：
 
@@ -138,7 +138,7 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent
 firewall-cmd --zone=public --remove-service=samba --permanent
 ```
 
-### 七. 测试
+## 七. 测试
 
 至此，可以在windows通过`\\内网IP`访问共享目录。如果只能看到目录不能看到文件，可通过命令`setenforce 0`临时解决（重启后失效），或通过修改配置长期解决：
 

@@ -1,6 +1,6 @@
 # Win10 初始化偏好设置
 
-### 一. 系统设置
+## 一. 系统设置
 
 1. 系统设置：通知，电源，隐私，Cleartype...
 2. 设置资源管理器启动时打开“此电脑”：文件夹选项 - 常规
@@ -10,7 +10,7 @@
 6. 映射网络驱动器NAS目录
 7. 删除时显示确认提示：回收站属性
 
-### 二. 软件设置
+## 二. 软件设置
 
 1. 安装常用字体：Inconsolata, YaHei-Consolas-Hybrid, YaHei-Mono
 2. 设置默认浏览器：CentBrowser
@@ -18,7 +18,7 @@
 4. 设置默认播放器：PotPlayer
 5. 设置默认解压工具：Bandizip
 
-### 三. 安装其他软件
+## 三. 安装其他软件
 
 1. 安装迅雷极速版（防升级）
 
@@ -32,7 +32,7 @@
 5. 设置 Eclipse
 6. 关联 SublimeText：执行 sublime\_text\_settings.bat
 
-### 四. 禁用不必要的服务
+## 四. 禁用不必要的服务
 
 * Connected User Experiences and Telemetry
 * Contact Data\_37c1e5
@@ -57,11 +57,11 @@
 * 同步主机\_37c1e5
 * 无线电管理服务
 
-### 五. 删除临时文件
+## 五. 删除临时文件
 
 Windows.old, $SysReset, UserTemp
 
-### 六. 系统备份
+## 六. 系统备份
 
 设置 - 更新与安全 - 备份
 

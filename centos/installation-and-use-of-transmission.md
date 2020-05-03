@@ -2,7 +2,7 @@
 
 [Transmission](https://transmissionbt.com) 是一种 BitTorrent 客户端，以跨平台的服务端和简洁的用户界面著称。
 
-### 一. 安装及启停
+## 一. 安装及启停
 
 ```bash
 yum install transmission transmission-daemon
@@ -12,7 +12,7 @@ systemctl enable transmission-daemon
 
 启动后即可通过浏览器 `http://IP:9091` 访问和使用 transmission 服务。
 
-### 二. 修改配置文件
+## 二. 修改配置文件
 
 修改配置文件之前必须先停止 transmission-daemon，否则不生效，修改完成后再启动。
 
