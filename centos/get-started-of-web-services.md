@@ -123,3 +123,4 @@ ExecStart=/usr/sbin/php-fpm --nodaemonize -R --fpm-config /etc/php-fpm.conf
 找到`php-fpm.d/www.conf`，复制一份改名为例如`api.conf`，将其中`[www]`及`listen = 127.0.0.1:9000`改为`[api]`及`listen = 127.0.0.1:9001`，配置 nginx 中 proxy\_pass 的端口为9001，重启 php-fpm 和 nginx。
 
 在 Windows 下，同一 Nginx 的不同 Server 之间通过 curl 请求时会阻塞超时，原因是各 Server 共享 php-fpm 的 9000 端口，解决方法就是上述开启新端口供 Server 使用，但 CentOS 下不会出现这种情况，所以无需启动多个端口。
+
