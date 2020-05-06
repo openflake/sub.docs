@@ -4,7 +4,10 @@
 
 ## centos
 
-* [Web 服务安装](centos/get-started-of-web-services.md)
+* [Nginx+Apache+PHP 服务安装](centos/get-started-of-web-services.md)
+* [MySQL8.0 安装与配置](centos/get-started-of-mysql8.md)
+* [Memcached 服务安装](centos/get-started-of-memcached.md)
+* [Let's Encrypt 域名证书安装](centos/get-started-of-letsencrypt.md)
 * [Cron 定时服务和数据库备份](centos/cron-and-backup-in-centos.md)
 * [Samba 安装与使用](centos/get-started-of-samba.md)
 * [PM2 安装与使用](centos/get-started-of-pm2.md)
