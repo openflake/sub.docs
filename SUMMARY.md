@@ -32,4 +32,5 @@
 * [HTTP 响应代码](others/http-status-code.md)
 * [Nginx Location 匹配模式](others/nginx-location-pattern.md)
 * [NAS 基础知识](others/basic-knowledge-of-nas.md)
+* [开发者免费资源](others/free-resouces-for-dev.md)
 
