@@ -37,7 +37,7 @@ mysqladmin --version
 
 ## 三. 初始化
 
-执行以下命令对MySQL进行初始化，其目的是创建数据文件目录和系统数据库、产生随机root密码。
+初始化目的是创建数据文件目录和系统数据库、产生随机root密码。
 ```bash
 mysqld --initialize
 ```
@@ -49,7 +49,7 @@ systemctl start mysqld
 
 如果启动失败，可能原因有：
 
-1. 未授予mysql目录权限，可尝试如下命令：
+1. 未授予mysql目录权限，解决方法：
 ```bash
 chown -R mysql:mysql /var/lib/mysql/
 ```
