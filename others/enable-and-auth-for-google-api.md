@@ -1,4 +1,4 @@
-# GoogleDrive API 启用与授权
+# Google API 启用与授权
 
 ## 一. 启用谷歌 API
 
