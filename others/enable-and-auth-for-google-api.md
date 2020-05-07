@@ -6,7 +6,7 @@
 
 ## 二. 生成 API 授权码
 
-对于第三方应用来说，API 授权过程大致（仅列举主要参数）是：
+对于第三方应用来说，API 授权大致过程（仅列举主要参数）是：
 
 1. 通过 client\_id  获取 code；
 2. 通过 client\_id、cilent\_secret、code 获取 access\_token 和 refresh\_token
