@@ -4,6 +4,7 @@
 
 ## centos
 
+* [Rclone 安装与使用](centos/get-started-of-rclone.md)
 * [Nginx+Apache+PHP 服务安装](centos/get-started-of-web-services.md)
 * [MySQL8.0 安装与配置](centos/get-started-of-mysql8.md)
 * [Memcached 服务安装](centos/get-started-of-memcached.md)
