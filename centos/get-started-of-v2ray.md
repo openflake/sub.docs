@@ -6,6 +6,9 @@
 curl -O https://install.direct/go.sh
 chmod +x go.sh
 ./go.sh
+
+// or
+bash <(curl -L -s https://install.direct/go.sh)
 ```
 
 完成后会显示入站端口和UUID信息，可先复制下来备用也可以后续在`/etc/v2ray/config.json`配置文件中查看。启动 v2ray：
