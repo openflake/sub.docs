@@ -13,5 +13,5 @@
 3. 通过 access\_token 调用 API
 4. 当 access\_token 过期时，通过 refresh\_token 刷新 access\_token
 
-所以授权的核心是获取 refresh\_token，可通过 Restful API 方式，也可利用`Rclone`工具，详见 [Rclone 安装与使用](https://app.gitbook.com/@status/s/tech-docs/centos/get-started-of-rclone#er-pei-zhi-google-drive)，进入`rclone.conf`配置文件查看。
+所以授权的核心是获取 refresh\_token，可通过 Restful API 方式，也可利用`Rclone`工具，详见 [Rclone 安装与使用](https://docs.zerg.cc/centos/get-started-of-rclone)，进入`rclone.conf`配置文件查看。
 
