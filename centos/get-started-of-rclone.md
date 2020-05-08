@@ -173,11 +173,14 @@ rclone config file | grep rclone.conf
 [cos]
 type = s3           # 对象存储似乎必须是s3类型
 provider = Other
+acl = public-read
 env_auth = false    # 不从环境变量中获取密钥
 access_key_id =     # 腾讯云的 SecretId
 secret_access_key = # 腾讯云的 SecretKey
 endpoint = cos.ap-hongkong.myqcloud.com # COS域名
 ```
+
+其中`acl`参数需注意，同步时会根据此设置覆盖原有权限。对于腾讯COS来说，可选值有：`private`私有读写（默认）；`public-read`公有读私有写；`public-read-write`公有读写。
 
 ### 四. Rclone 常用操作
 
