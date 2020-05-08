@@ -7,7 +7,7 @@ curl -O https://install.direct/go.sh
 chmod +x go.sh
 ./go.sh
 
-// or
+# or
 bash <(curl -L -s https://install.direct/go.sh)
 ```
 
