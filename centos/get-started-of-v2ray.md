@@ -75,14 +75,14 @@ systemctl start v2ray
 server {
   listen 80;
   server_name warn.ga;
-  return 301 https://$server_name$request_uri;
+  return 301 https://$host$request_uri;
 }
 
 server {
   listen 443 ssl http2 default_server;
   server_name warn.ga;
 
-  ssl_certificate /etc/nginx/ssl/fullchain.cer;
+  ssl_certificate /etc/nginx/ssl/warn.ga.cer;
   ssl_certificate_key /etc/nginx/ssl/warn.ga.key;
   ssl_session_timeout 5m;
   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
