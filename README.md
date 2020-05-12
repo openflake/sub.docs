@@ -14,6 +14,7 @@
 * 腾讯网站分析：[https://ta.qq.com](https://ta.qq.com)
 * 微信公众平台：[https://mp.weixin.qq.com](https://mp.weixin.qq.com)
 * 微信支付平台：[https://pay.weixin.qq.com](https://pay.weixin.qq.com)
+* OneDrive 教育版：[https://swccd0-my.sharepoint.com](https://swccd0-my.sharepoint.com)
 
 ### 工具类
 
