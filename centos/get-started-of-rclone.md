@@ -246,7 +246,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/rclone mount gd:/ /mnt/gd --allow-other
+ExecStart=/usr/bin/rclone mount gd:/ /mnt/gd --allow-other --cache-dir /tmp/rclone.cache --vfs-cache-mode full --vfs-cache-max-age 72h
 Restart=on-abort
 
 [Install]
