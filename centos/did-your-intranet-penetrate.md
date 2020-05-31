@@ -1,10 +1,69 @@
 # 内网穿透技术简介
 
-自从搞起ITX主机，就无时不在想方设法穿透内网。用过一个叫 [Serveo](http://serveo.net) 的神器，号称无需注册无需安装无需公网IP，仅通过系统自带的ssh进行反向代理，确实能用，但即便采用autossh，稳定性也比较差，或许是我的打开方式不对，总之放弃了。
+自从搞起ITX主机，就无时不在设法穿透内网。用过一个叫 [Serveo](http://serveo.net) 的神器，号称无需注册无需安装无需公网IP，仅通过系统自带的ssh进行反向代理，确实能用，但即便采用autossh，稳定性也比较差，或许是我打开方式不对。
 
-## 一. SSH大法
+## 一. Serveo 神器 + SSH
 
-serveo不稳定可能是他自身的问题，不能怪SSH，如果自己有一台公网服务器或许会不一样，可以按如下步骤进行端口转发穿透内网。
+### 1. 基本用法
+
+```bash
+# 自动分配二级域名
+ssh -R 80:localhost:3000 serveo.net
+
+# 指定二级域名
+ssh -R myname:80:localhost:8888 serveo.net
+```
+
+### 2. 自定义域名
+
+首先需要一个SSH密钥对，可以使用`ssh-keygen -l`命令生成，输出结果如下：
+
+```text
+2048 SHA256:pmc7ZRv7ymCmghUwHoJWEm5ToSTd33ryeDeps5RnfRY no comment (RSA)
+```
+
+然后将域名A记录解析至159.89.214.31，同时增加TXT记录，内容为（其中等号右边是密钥指纹）：
+
+```text
+authkeyfp=SHA256:pmc7ZRv7ymCmghUwHoJWEm5ToSTd33ryeDeps5RnfRY
+```
+
+### 3. 启动SSH
+
+为便于使用，可创建服务脚本：
+
+```text
+vi /usr/lib/systemd/system/serveo.service
+```
+
+内容如下：
+
+```text
+[Unit]
+Description=Auto SSH Local Tunnel
+After=network-online.target sshd.service
+
+[Service]
+Type=simple
+Environment="AUTOSSH_GATETIME=0"
+ExecStart=/usr/bin/autossh -M 0 -R customdomain.com:80:localhost:3000 serveo.net
+ExecReload=/bin/kill $MAINPID
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+保存后启动：
+
+```text
+systemctl enable serveo
+systemctl start serveo
+```
+
+## 二. 公网服务器 + SSH
+
+如果自己有一台公网服务器，可以按如下步骤进行端口转发穿透内网，理论上应该比 serveo 更稳定和可靠。
 
 ### 1. 准备工作
 
@@ -95,7 +154,7 @@ systemctl start ssh-tunnel
 
 以上步骤的结果是将公网服务器的`7777`端口映射到了本地内网机器的`80`端口，如果提供网站服务显然不太合适，需要再利用Nginx将公网服务器的`80`或`443`代理到`7777`。如此一来，用户访问公网IP或域名会转到自身的`7777`，再转到内网的`80`。
 
-## 二. FRP大法
+## 三. 公网服务器 + FRP
 
 [FRP](https://github.com/fatedier/frp) 是一个可用于内网穿透的高性能的反向代理应用，支持 tcp, udp 协议，为 http 和 https 应用协议提供了额外的能力，且尝试性支持了点对点穿透，但前提也是必须有一个公网IP，例如云服务器IP。以下对通过自定义域名访问内网 web 服务、以及简单的文件访问服务进行部署，更详细的文档参见[这里](https://github.com/fatedier/frp/blob/master/README_zh.md)。
 
@@ -184,7 +243,7 @@ systemctl enable frp
 systemctl start frp
 ```
 
-## 三. 终极大法
+## 四. 终极大法
 
 然而，FRP 毕竟还是需要一个具有公网IP的服务器，于是继续研究。人说家里的路由器可以做端口映射，但路由器是连在光猫上的，光猫不放话，内网再怎么折腾也无济于事。为了获取光猫的超级权限，又在网上寻找各种破解之术，但没一个管用。
 
