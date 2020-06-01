@@ -14,7 +14,7 @@
 
 ### 数据库
 
-* [https://remotemysql.com](https://remotemysql.com)
+* [https://remotemysql.com](https://remotemysql.com) - 30天无写入操作则自动删除数据库
 * [https://www.db4free.net](https://www.db4free.net)
 * [https://www.freemysqlhosting.net](https://www.freemysqlhosting.net)
 * [https://www.mongodb.com](https://www.mongodb.com)
