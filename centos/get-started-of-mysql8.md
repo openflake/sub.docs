@@ -34,7 +34,19 @@ rpm -ivh mysql-community-client-8.0.20-1.el7.x86_64.rpm
 rpm -ivh mysql-community-server-8.0.20-1.el7.x86_64.rpm
 ```
 
-查看是否安装成功：
+如果安装`community-libs`时报以下错：
+
+```text
+mariadb-libs is obsoleted by mysql-community-libs-8.0.20-1.el7.x86_64
+```
+
+则需先卸载`mariadbb-libs`
+
+```text
+yum remove mariadbb-libs.x86_64
+```
+
+所有包安装完成后，查看是否成功：
 
 ```bash
 mysqladmin --version
