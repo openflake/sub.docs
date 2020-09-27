@@ -9,6 +9,7 @@
 * 谷歌云端硬盘：[https://drive.google.com](https://drive.google.com)
 * 谷歌文档：[https://docs.google.com](https://docs.google.com)
 * 百度地图服务：[https://lbsyun.baidu.com](https://lbsyun.baidu.com)
+* 阿里地图选择器：[http://datav.aliyun.com/tools/atlas](http://datav.aliyun.com/tools/atlas)
 * 腾讯地图服务：[https://lbs.qq.com](https://lbs.qq.com)
 * 腾讯短信服务：[https://console.qcloud.com/sms](https://console.qcloud.com/sms)
 * 腾讯网站分析：[https://ta.qq.com](https://ta.qq.com)
@@ -146,7 +147,6 @@
   * [https://www.portablesoft.org](https://www.portablesoft.org)
   * [http://www.xdowns.com](http://www.xdowns.com)
   * [https://www.crsky.com](https://www.crsky.com)
-* 美女写真：[https://www.ku137.net](https://www.ku137.net)
 * AV 磁力：[https://www.javbus.com](https://www.javbus.com)
 * 邮箱注册：[https://signup.mail.com](https://signup.mail.com)
 * 中国行政区划代码：[http://www.mca.gov.cn/article/sj/xzqh/2018](http://www.mca.gov.cn/article/sj/xzqh/2018)
@@ -210,4 +210,35 @@
 * [FileZilla](https://filezilla-project.org) - FTP, FTPS 和 SFTP 客户端
 * [GitHub Desktop](https://desktop.github.com) - GitHub 官方客户端
 * [HeidiSQL](https://www.heidisql.com) - 数据库客户端
+
+### Serverless
+
+* [https://md.now.sh](https://md.now.sh)
+* [https://log.now.sh](https://log.now.sh)
+* [https://shell.now.sh](https://shell.now.sh)
+* [https://icon.now.sh](https://icon.now.sh)
+* [https://about.now.sh](https://about.now.sh)
+* [https://e.now.sh](https://e.now.sh)
+* [https://shot.now.sh](https://shot.now.sh)
+* [https://qr.now.sh](https://qr.now.sh)
+* [https://ip.now.sh](https://ip.now.sh)
+* [https://badge.now.sh](https://badge.now.sh)
+* [https://u.nu](https://u.nu)
+* [https://nodei.co](https://nodei.co)
+* [https://shields.io](https://shields.io)
+* [https://shrtco.de](https://shrtco.de)
+* [https://file.io](https://file.io)
+
+### IP-GEO APIs
+
+* [https://ipinfo.io/34.92.215.226/json](https://ipinfo.io/34.92.215.226/json)
+* [https://ipapi.com](https://ipapi.com)
+* [https://ip-api.com](https://ip-api.com)
+* [https://ipapi.co](https://ipapi.co)
+* [https://iplist.cc](https://iplist.cc)
+* [https://ipstack.com](https://ipstack.com)
+* [https://www.ipify.org](https://www.ipify.org)
+* [https://ipgeolocation.io/pricing.html](https://ipgeolocation.io/pricing.html)
+* [http://ip.taobao.com/instructions](http://ip.taobao.com/instructions)
+* [https://medium.com/@ipdata\_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027](https://medium.com/@ipdata_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027)
 
