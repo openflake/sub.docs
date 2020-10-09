@@ -45,6 +45,9 @@
 
 ### 更多其他
 
+* [https://view.freev2ray.org](https://view.freev2ray.org/)
+* [https://github.com/freefq/free](https://github.com/freefq/free)
+* [https://github.com/umelabs/node.umelabs.dev](https://github.com/umelabs/node.umelabs.dev)
 * [https://v2ray.com](https://v2ray.com)
 * [https://gfw.press](https://gfw.press)
 * [https://asmcn.icopy.site/awesome/free-for-dev](https://asmcn.icopy.site/awesome/free-for-dev)
