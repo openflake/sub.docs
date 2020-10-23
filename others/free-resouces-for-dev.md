@@ -37,6 +37,13 @@
 * [https://connect.yandex.com/portal/admin](https://connect.yandex.com/portal/admin)
 * [https://pingly.com](https://pingly.com)
 
+### 邮件服务
+
+* [https://sendgrid.com/pricing/](https://sendgrid.com/pricing/) - 100封/天
+* [https://www.mailjet.com/pricing/](https://www.mailjet.com/pricing/) - 200封/天
+* [https://www.sendinblue.com/pricing/](https://www.sendinblue.com/pricing/) - 300封/天
+* [https://emaillabs.io/en/pricing/](https://emaillabs.io/en/pricing/) 800封/天
+
 ### 统计分析
 
 * [https://www.w3counter.com](https://www.w3counter.com) - 网站访问分析
