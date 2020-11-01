@@ -2,14 +2,22 @@
 
 ### 虚拟主机
 
-* [https://vercel.com](https://vercel.com) - Serverless Deployment for Node.js
-* [https://www.fast.io](https://www.fast.io) - 云盘CDN
+* [https://vercel.com](https://vercel.com) - 支持 Node.js 部署，国内访问速度较快。
+* [https://github.com](https://github.com) - 静态网站托管，支持 Jekyll 部署。
 * [https://sourceforge.net](https://sourceforge.net) - 支持PHP、MySQL，不支持 Memcached、Redis 扩展和 Curl 函数
   * FTP: web.sourceforge.net:22
   * SSH: shell.sourceforge.net:22
   * CNAME: vhost.sourceforge.net
 * [http://www.wonzan.com](http://www.wonzan.com) - 支持PHP、MySQL，其他情况未知
-* [https://surge.sh](https://surge.sh) - 静态网站空间
+* [https://surge.sh](https://surge.sh) - 静态网站托管
+
+### 存储
+
+* ~~~~[~~https://www.fast.io~~](https://www.fast.io) ~~- 与主流云盘同步的CDN，2021年起取消免费套餐。~~
+* [https://cloudinary.com](https://cloudinary.com/) - 存储兼CDN，拥有强大的图片、视频处理能力，国内访问速度较快。
+* [https://drive.google.com](https://drive.google.com) - 谷歌云盘，可通过API构建公共存储。
+* [https://cloud.tencent.com](https://cloud.tencent.com/) - 腾讯云对象存储，可开启CDN，可结合数据万象处理图片。
+* [https://www.scaleway.com/en/pricing](https://www.scaleway.com/en/pricing)
 
 ### 内存缓存
 
@@ -17,6 +25,7 @@
 
 ### 数据库
 
+* [https://leancloud.cn](https://leancloud.cn) - 开发版含免费1G的结构化存储空间，另含低配云引擎、云函数。
 * [https://freedb.tech](https://freedb.tech)
 * [https://remotemysql.com](https://remotemysql.com) - 30天无写入操作则自动删除数据库
 * [https://www.db4free.net](https://www.db4free.net)
@@ -24,11 +33,6 @@
 * [https://www.mongodb.com](https://www.mongodb.com)
 * [https://scalingo.com/pricing](https://scalingo.com/pricing) 
 * [https://fauna.com/pricing](https://fauna.com/pricing)
-
-### 对象存储
-
-* [https://cloud.tencent.com](https://cloud.tencent.com/)
-* [https://www.scaleway.com/en/pricing](https://www.scaleway.com/en/pricing)
 
 ### 域名邮箱
 
