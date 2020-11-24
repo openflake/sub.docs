@@ -10,6 +10,7 @@
   * CNAME: vhost.sourceforge.net
 * [http://www.wonzan.com](http://www.wonzan.com) - 支持PHP、MySQL，其他情况未知
 * [https://surge.sh](https://surge.sh) - 静态网站托管
+* [https://workers.cloudflare.com](https://workers.cloudflare.com) - Cloudflare Workers
 
 ### 存储
 
