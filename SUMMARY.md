@@ -20,6 +20,7 @@
 * [如何在 CentOS 上增加交换分区](centos/add-swap-space-in-centos.md)
 * [内网穿透技术简介](centos/did-your-intranet-penetrate.md)
 * [CentOS 常用命令](centos/commands-of-centos.md)
+* [Redis 安装与配置](centos/get-started-of-redis.md)
 
 ## windows
 
