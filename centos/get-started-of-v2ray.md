@@ -103,7 +103,7 @@ server {
 }
 ```
 
-其中与 SSL 证书相关的配置参见 [https://docs.zerg.cc/\#centos/install-web-services-in-centos.md](https://docs.zerg.cc/#centos/install-web-services-in-centos.md) 最后章节。
+其中与 SSL 证书相关的配置参见 [https://docs.zerg.cc/centos/get-started-of-letsencrypt](https://docs.zerg.cc/centos/get-started-of-letsencrypt)。
 
 ### 3. 增加 CDN 设置
 

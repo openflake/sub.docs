@@ -8,6 +8,7 @@
 * [Nginx+Apache+PHP 服务安装](centos/get-started-of-web-services.md)
 * [MySQL8.0 安装与配置](centos/get-started-of-mysql8.md)
 * [Memcached 服务安装](centos/get-started-of-memcached.md)
+* [Redis 安装与配置](centos/get-started-of-redis.md)
 * [Let's Encrypt 域名证书安装](centos/get-started-of-letsencrypt.md)
 * [Cron 定时服务和数据库备份](centos/cron-and-backup-in-centos.md)
 * [Samba 安装与使用](centos/get-started-of-samba.md)
@@ -20,7 +21,6 @@
 * [如何在 CentOS 上增加交换分区](centos/add-swap-space-in-centos.md)
 * [内网穿透技术简介](centos/did-your-intranet-penetrate.md)
 * [CentOS 常用命令](centos/commands-of-centos.md)
-* [Redis 安装与配置](centos/get-started-of-redis.md)
 
 ## windows
 
