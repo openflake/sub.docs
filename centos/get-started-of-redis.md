@@ -33,3 +33,5 @@ requirepass foobared
 bind 0.0.0.0
 ```
 
+配置完成后需重启 Redis 服务。
+
