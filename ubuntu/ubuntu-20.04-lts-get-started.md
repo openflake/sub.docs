@@ -319,15 +319,13 @@ StartupNotify=false
 sudo apt install ./wps-office_11.1.0.9719_amd64.deb
 ```
 
-启动提示字体缺失解决方法（未经验证）：
+启动提示字体缺失解决方法：
 
 ```text
-unzip wps-fonts.zip
+wget https://unpkg.net/@openflake/fonts/wps-fonts.zip
+unzip wps-fonts.zip -d wps-fonts
 cd wps-fonts
-sudo cp * /usr/share/fonts
-
-sudo mkfontscale
-sudo mkfontdir
+sudo cp * /usr/share/fonts/wps-office/
 ```
 
 ### MegaSync
