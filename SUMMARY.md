@@ -2,6 +2,10 @@
 
 * [收藏夹](README.md)
 
+## UBUNTU
+
+* [Ubuntu 20.04 LTS 新手上路](ubuntu/ubuntu-20.04-lts-get-started.md)
+
 ## centos
 
 * [Rclone 安装与使用](centos/get-started-of-rclone.md)
