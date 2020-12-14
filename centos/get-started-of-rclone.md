@@ -290,6 +290,7 @@ _site/**
 .settings/**
 .debris/**
 .stfolder/**
+.stignore
 Thumbs.db
 *.tmp
 *~.*
