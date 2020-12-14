@@ -289,6 +289,7 @@ _site/**
 .git/**
 .settings/**
 .debris/**
+.stfolder/**
 Thumbs.db
 *.tmp
 *~.*
