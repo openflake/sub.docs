@@ -293,6 +293,7 @@ _site/**
 .stignore
 Thumbs.db
 *.tmp
+*.class
 *~.*
 ~*
 ```
