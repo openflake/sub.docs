@@ -481,6 +481,19 @@ wget https://github.com/v2fly/v2ray-core/releases/download/v4.33.0/v2ray-linux-6
 
 解压到任意目录，然后在 Qv2ray “首选项-&gt;内核设置”中选择核心路径即可。
 
+### Syncthing
+
+参见：[https://syncthing.net/downloads/](https://syncthing.net/downloads/)
+
+```text
+curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+sudo apt update
+sudo apt install syncthing
+
+sudo systemctl start syncthing@root.service
+sudo systemctl enable syncthing@root.service
+```
+
 ## 常用命令
 
 * 清理所有 apt 缓存：`sudo apt clean`
