@@ -273,3 +273,31 @@ umount /mnt/gd
 fusermount -qzu /mnt/gd
 ```
 
+#### 7. 排除目录或文件
+
+新建简单文本文件：
+
+```text
+vi ~/.config/rclone/excludes.txt
+```
+
+内容如下：
+
+```text
+node_modules/**
+_site/**
+.git/**
+.settings/**
+.debris/**
+Thumbs.db
+*.tmp
+*~.*
+~*
+```
+
+使用以下命令饮用上述文件：
+
+```text
+sudo rclone sync ~/Cloud/ /mnt/nas/Cloud/ --exclude-from ~/.config/rclone/excludes.txt -v
+```
+

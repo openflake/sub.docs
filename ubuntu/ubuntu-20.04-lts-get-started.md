@@ -89,10 +89,10 @@ sudo vi /etc/fstab
 //10.0.0.2/temp /mnt/temp cifs username="",password="" 0 0
 ```
 
-另一种方式是将用户名密码单独写在配置文件中：
+另一种方式是将用户名密码单独写在配置文件中（顺便设置读写权限）：
 
 ```text
-//10.0.0.2/temp /mnt/temp cifs credentials=/home/.smbpasswd 0 0
+//10.0.0.2/temp /mnt/temp cifs credentials=/home/.smbpasswd,,dir_mode=0777,file_mode=0777 0 0
 ```
 
 `.smbpasswd` 是一个简单的认证配置文件，文件名和路径随意，内容如下：
@@ -228,6 +228,15 @@ sudo apt install sublime-merge
 sudo apt install git
 ```
 
+### Github Desktop
+
+参见：[https://github.com/shiftkey/desktop](https://github.com/shiftkey/desktop)
+
+```text
+wget https://github.com/shiftkey/desktop/releases/download/release-2.5.7-linux1/GitHubDesktop-linux-2.5.7-linux1.deb
+sudo apt install ./GitHubDesktop-linux-2.5.7-linux1.deb
+```
+
 ### NodeJS & NPM
 
 ```text
@@ -273,6 +282,47 @@ listen = /run/php/php7.4-fpm.sock
 
 ```text
 listen = 127.0.0.1:9000
+```
+
+### MySQL
+
+```text
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl status mysql
+```
+
+修改配置文件以减少资源占用：
+
+```text
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+在 `[mysqld]` 中增加如下内容：
+
+```text
+skip-name-resolve
+performance_schema = OFF
+performance_schema_max_table_instances = 200
+max_connections = 50
+
+innodb_buffer_pool_size = 64M
+innodb_log_file_size = 16M
+innodb_flush_method = O_DIRECT
+
+tmp_table_size = 8M
+table_definition_cache = 200
+table_open_cache = 200
+```
+
+安全性设置：
+
+```text
+sudo mysql_secure_installation
+
+sudo mysql
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'strong_password';
+FLUSH PRIVILEGES;
 ```
 
 ### Open JDK
@@ -438,4 +488,5 @@ wget https://github.com/v2fly/v2ray-core/releases/download/v4.33.0/v2ray-linux-6
 * 清理未使用的依赖项：`sudo apt autoremove` 
 * 卸载软件并清除配置项：`sudo apt purge [package_name]` 
 * 查看所有已安装软件：`sudo apt list --installed`
+* 远程传输：`scp [username@ip/config_name]:/remote_path/file /local_path/file`
 
