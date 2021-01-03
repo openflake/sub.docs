@@ -33,6 +33,10 @@
 * [Win10 系统字体更换](windows/change-system-fonts-in-win10.md)
 * [Win10 初始化偏好设置](windows/preferences-in-win10.md)
 
+## Management
+
+* [企业信息化规划方法论](management/qi-ye-xin-xi-hua-gui-hua-fang-fa-lun.md)
+
 ## others
 
 * [Google API 启用与授权](others/enable-and-auth-for-google-api.md)
