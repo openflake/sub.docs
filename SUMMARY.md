@@ -36,6 +36,7 @@
 ## Management
 
 * [企业信息化规划方法论](management/methodology-of-enterprise-information-planning.md)
+* [需求用例编写指南](management/requirement-use-case-guide.md)
 
 ## others
 
