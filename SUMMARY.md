@@ -35,7 +35,7 @@
 
 ## Management
 
-* [企业信息化规划方法论](management/qi-ye-xin-xi-hua-gui-hua-fang-fa-lun.md)
+* [企业信息化规划方法论](management/methodology-of-enterprise-information-planning.md)
 
 ## others
 
