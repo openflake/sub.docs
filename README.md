@@ -245,7 +245,7 @@
 ### Others
 
 * [https://zerg.cc](https://zerg.cc) [https://hex.now.sh](https://hex.now.sh)
-* [https://docs.zerg.cc](https://docs.zerg.cc])
+* [https://docs.zerg.cc](https://docs.zerg.cc)
 * [https://lab.zerg.cc](https://lab.zerg.cc)
 * [https://photo.zerg.cc](https://photo.zerg.cc) [https://ims.now.sh](https://ims.now.sh)
 * [https://auth.zerg.cc](https://auth.zerg.cc) [https://dos.now.sh](https://dos.now.sh)
