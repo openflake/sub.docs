@@ -242,3 +242,27 @@
 * [http://ip.taobao.com/instructions](http://ip.taobao.com/instructions)
 * [https://medium.com/@ipdata\_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027](https://medium.com/@ipdata_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027)
 
+### 其他
+
+| 序号 | 站名 | 主域名 | 备用域名 |
+| :--- | :--- | :--- | :--- |
+| 1.1 | 战国册博客 | [zerg.cc](https://zerg.cc) | [hex.now.sh](https://hex.now.sh) |
+| 1.2 | 技术文档库 | [docs.zerg.cc](https://docs.zerg.cc) |  |
+| 1.3 | 前端实验室 | [lab.zerg.cc](https://lab.zerg.cc) |  |
+| 1.4 | 摄影照片墙 | [photo.zerg.cc](https://photo.zerg.cc) | [ims.now.sh](https://ims.now.sh) |
+| 1.5 | 密码 | [auth.zerg.cc](https://auth.zerg.cc) | [dos.now.sh](https://dos.now.sh) |
+| 1.6 | 简历 | [i.zerg.cc](https://i.zerg.cc) | [bios.now.sh](https://bios.now.sh) |
+| 1.7 | 家谱 | [clan.zerg.cc](https://clan.zerg.cc) |  |
+| 1.8 | 接口 | [api.zerg.cc](https://api.zerg.cc) | [wait.now.sh](https://wait.now.sh) |
+| 2.1 | 谷歌硬盘 | [unpkg.net](https://unpkg.net) | [gd.now.sh](https://gd.now.sh) |
+| 2.2 | 谷歌内容 | [lh3.unpkg.net](https://lh3.unpkg.net) | [lh3.now.sh](https://lh3.now.sh) |
+| 3.1 | 数据可视化 | [state.eu.org](https://state.eu.org) | [worldmap.now.sh](https://worldmap.now.sh) |
+| 4.1 | 趣向联盟 | [www.unfetish.com](https://www.unfetish.com) | [fetish.now.sh](https://fetish.now.sh) |
+| 5.1 | 前端压缩 | [less.now.sh](https://less.now.sh) | [compress.now.sh](https://compress.now.sh) |
+| 5.2 | 加解密 | [crypt.now.sh](https://crypt.now.sh) |  |
+| 5.3 | 植物识别 | [plant.now.sh](https://plant.now.sh) |  |
+| 5.4 | 城市足迹 | [footmark.now.sh](https://footmark.now.sh) |  |
+| 5.5 | ASCII 文字 | [string.now.sh](https://string.now.sh) | [figlet.now.sh](https://figlet.now.sh) |
+| 5.6 | 接口 | [call.now.sh](https://call.now.sh) |  |
+| 5.7 | 站点监控 | [warn.now.sh](https://warn.now.sh) |  |
+
