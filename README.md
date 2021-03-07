@@ -244,23 +244,23 @@
 
 ### Others
 
-* https://zerg.cc https://hex.now.sh
-* https://docs.zerg.cc
-* https://lab.zerg.cc
-* https://photo.zerg.cc https://ims.now.sh
-* https://auth.zerg.cc https://dos.now.sh
-* https://i.zerg.cc https://bios.now.sh
-* https://clan.zerg.cc
-* https://api.zerg.cc https://wait.now.sh
-* https://unpkg.net https://gd.now.sh
-* https://lh3.unpkg.net https://lh3.now.sh
-* https://state.eu.org https://worldmap.now.sh
-* https://www.unfetish.com https://fetish.now.sh
-* https://less.now.sh https://compress.now.sh
-* https://crypt.now.sh
-* https://plant.now.sh
-* https://footmark.now.sh
-* https://string.now.sh https://figlet.now.sh
-* https://call.now.sh
-* https://warn.now.sh
+* [https://zerg.cc](https://zerg.cc) [https://hex.now.sh](https://hex.now.sh)
+* [https://docs.zerg.cc](https://docs.zerg.cc])
+* [https://lab.zerg.cc](https://lab.zerg.cc)
+* [https://photo.zerg.cc](https://photo.zerg.cc) [https://ims.now.sh](https://ims.now.sh)
+* [https://auth.zerg.cc](https://auth.zerg.cc) [https://dos.now.sh](https://dos.now.sh)
+* [https://i.zerg.cc](https://i.zerg.cc) [https://bios.now.sh](https://bios.now.sh)
+* [https://clan.zerg.cc](https://clan.zerg.cc)
+* [https://api.zerg.cc](https://api.zerg.cc) [https://wait.now.sh](https://wait.now.sh)
+* [https://unpkg.net](https://unpkg.net) [https://gd.now.sh](https://gd.now.sh)
+* [https://lh3.unpkg.net](https://lh3.unpkg.net) [https://lh3.now.sh](https://lh3.now.sh)
+* [https://state.eu.org](https://state.eu.org) [https://worldmap.now.sh](https://worldmap.now.sh)
+* [https://www.unfetish.com](https://www.unfetish.com) [https://fetish.now.sh](https://fetish.now.sh)
+* [https://less.now.sh](https://less.now.sh) [https://compress.now.sh](https://compress.now.sh)
+* [https://crypt.now.sh](https://crypt.now.sh)
+* [https://plant.now.sh](https://plant.now.sh)
+* [https://footmark.now.sh](https://footmark.now.sh)
+* [https://string.now.sh](https://string.now.sh) [https://figlet.now.sh](https://figlet.now.sh)
+* [https://call.now.sh](https://call.now.sh)
+* [https://warn.now.sh](https://warn.now.sh)
 
