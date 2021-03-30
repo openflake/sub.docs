@@ -11,6 +11,8 @@
 * [http://www.wonzan.com](http://www.wonzan.com) - 支持PHP、MySQL，其他情况未知
 * [https://surge.sh](https://surge.sh) - 静态网站托管
 * [https://workers.cloudflare.com](https://workers.cloudflare.com) - Cloudflare Workers
+* [https://www.deta.sh/pricing](https://www.deta.sh/pricing)
+* [https://www.alwaysdata.com](https://www.alwaysdata.com)
 
 ## 存储
 
@@ -23,6 +25,7 @@
 ## 内存缓存
 
 * [https://redislabs.com](https://redislabs.com)
+* [https://upstash.com](https://upstash.com)
 
 ## 数据库
 
@@ -49,11 +52,17 @@
 * [https://www.sendinblue.com/pricing/](https://www.sendinblue.com/pricing/) - 300封/天
 * [https://emaillabs.io/en/pricing/](https://emaillabs.io/en/pricing/) 800封/天
 
+## 电话号码验证
+
+* [https://veriphone.io](https://veriphone.io)
+* [https://numverify.com](https://numverify.com)
+
 ## 统计分析
 
 * [https://www.w3counter.com](https://www.w3counter.com) - 网站访问分析
 * [https://uptimerobot.com](https://uptimerobot.com) - 网站状态监控
 * [https://admin.exoclick.com](https://admin.exoclick.com) - 广告联盟
+* [https://www.atlassian.com/zh/software/statuspage](https://www.atlassian.com/zh/software/statuspage)
 
 ## 更多其他
 
