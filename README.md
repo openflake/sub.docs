@@ -239,5 +239,4 @@
 * [https://ipstack.com](https://ipstack.com)
 * [https://www.ipify.org](https://www.ipify.org)
 * [https://ipgeolocation.io/pricing.html](https://ipgeolocation.io/pricing.html)
-* [http://ip.taobao.com/instructions](http://ip.taobao.com/instructions)
 * [https://medium.com/@ipdata\_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027](https://medium.com/@ipdata_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027)
