@@ -21,7 +21,7 @@
 
 * PNG Image Compress: [https://tinypng.com](https://tinypng.com)
 * SVG Editor: [https://c.runoob.com/more/svgeditor](https://c.runoob.com/more/svgeditor)
-* SVG Compress: 
+* SVG Compress:
   * [https://jakearchibald.github.io/svgomg](https://jakearchibald.github.io/svgomg)
   * [https://www.zhangxinxu.com/sp/svgo](https://www.zhangxinxu.com/sp/svgo)
 * JS/CSS Compress:
@@ -87,7 +87,7 @@
 * Logos:
   * [https://logopond.com](https://logopond.com)
   * [http://www.logoquan.com](http://www.logoquan.com)
-* SVG Background: 
+* SVG Background:
   * [https://www.svgbackgrounds.com](https://www.svgbackgrounds.com)
   * [https://trianglify.io](https://trianglify.io)
 * Interactive Generative Art: [http://weavesilk.com](http://weavesilk.com)
@@ -106,7 +106,7 @@
 * Sublime Package Control: [https://packagecontrol.io](https://packagecontrol.io)
 * Java Code Examples: [https://www.programcreek.com](https://www.programcreek.com)
 * Maven Repository: [https://mvnrepository.com](https://mvnrepository.com)
-* JS Charts: 
+* JS Charts:
   * [https://echarts.baidu.com](https://echarts.baidu.com)
   * [https://www.highcharts.com.cn](https://www.highcharts.com.cn)
   * [https://www.chartjs.org](https://www.chartjs.org)
@@ -241,26 +241,3 @@
 * [https://ipgeolocation.io/pricing.html](https://ipgeolocation.io/pricing.html)
 * [http://ip.taobao.com/instructions](http://ip.taobao.com/instructions)
 * [https://medium.com/@ipdata\_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027](https://medium.com/@ipdata_co/what-is-the-best-commercial-ip-geolocation-api-d8195cda7027)
-
-### Others
-
-* [https://zerg.cc](https://zerg.cc) [https://hex.now.sh](https://hex.now.sh)
-* [https://docs.zerg.cc](https://docs.zerg.cc)
-* [https://lab.zerg.cc](https://lab.zerg.cc)
-* [https://photo.zerg.cc](https://photo.zerg.cc) [https://ims.now.sh](https://ims.now.sh)
-* [https://auth.zerg.cc](https://auth.zerg.cc) [https://dos.now.sh](https://dos.now.sh)
-* [https://i.zerg.cc](https://i.zerg.cc) [https://bios.now.sh](https://bios.now.sh)
-* [https://clan.zerg.cc](https://clan.zerg.cc)
-* [https://api.zerg.cc](https://api.zerg.cc) [https://wait.now.sh](https://wait.now.sh)
-* [https://unpkg.net](https://unpkg.net) [https://gd.now.sh](https://gd.now.sh)
-* [https://lh3.unpkg.net](https://lh3.unpkg.net) [https://lh3.now.sh](https://lh3.now.sh)
-* [https://state.eu.org](https://state.eu.org) [https://worldmap.now.sh](https://worldmap.now.sh)
-* [https://www.unfetish.com](https://www.unfetish.com) [https://fetish.now.sh](https://fetish.now.sh)
-* [https://less.now.sh](https://less.now.sh) [https://compress.now.sh](https://compress.now.sh)
-* [https://crypt.now.sh](https://crypt.now.sh)
-* [https://plant.now.sh](https://plant.now.sh)
-* [https://footmark.now.sh](https://footmark.now.sh)
-* [https://string.now.sh](https://string.now.sh) [https://figlet.now.sh](https://figlet.now.sh)
-* [https://call.now.sh](https://call.now.sh)
-* [https://warn.now.sh](https://warn.now.sh)
-
