@@ -16,6 +16,7 @@
 * 微信公众平台：[https://mp.weixin.qq.com](https://mp.weixin.qq.com)
 * 微信支付平台：[https://pay.weixin.qq.com](https://pay.weixin.qq.com)
 * OneDrive 教育版：[https://swccd0-my.sharepoint.com](https://swccd0-my.sharepoint.com)
+* Mapbox 地图开发：[https://www.mapbox.com](https://www.mapbox.com/)
 
 ### 工具类
 
