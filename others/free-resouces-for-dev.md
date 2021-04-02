@@ -64,6 +64,11 @@
 * [https://admin.exoclick.com](https://admin.exoclick.com) - 广告联盟
 * [https://www.atlassian.com/zh/software/statuspage](https://www.atlassian.com/zh/software/statuspage)
 
+## 开放接口
+
+* [https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)
+* [https://github.com/TonnyL/Awesome\_APIs/blob/master/README-zh.md](https://github.com/TonnyL/Awesome_APIs/blob/master/README-zh.md)
+
 ## 更多其他
 
 * [https://view.freev2ray.org](https://view.freev2ray.org/)
