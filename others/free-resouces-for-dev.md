@@ -12,7 +12,7 @@
 * [http://www.wonzan.com](http://www.wonzan.com) - 支持PHP、MySQL，其他情况未知
 * [https://surge.sh](https://surge.sh) - 静态网站托管
 * [https://workers.cloudflare.com](https://workers.cloudflare.com) - Cloudflare Workers
-* [https://www.deta.sh/pricing](https://www.deta.sh/pricing)
+* [https://www.deta.sh/pricing](https://www.deta.sh/pricing) - 支持nodeJS和deta数据库。
 * [https://www.alwaysdata.com](https://www.alwaysdata.com)
 
 ## 存储
