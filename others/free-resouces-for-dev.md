@@ -4,6 +4,7 @@
 
 * [https://vercel.com](https://vercel.com) - 支持 Node.js 部署，国内访问速度较快。
 * [https://github.com](https://github.com) - 静态网站托管，支持 Jekyll 部署。
+* [https://heroku.com](https://heroku.com) - 支持多种NodeJS、JAVA等语言，30分钟无请求自动休眠，绑定信用卡后可自定义域名。
 * [https://sourceforge.net](https://sourceforge.net) - 支持PHP、MySQL，不支持 Memcached、Redis 扩展和 Curl 函数
   * FTP: web.sourceforge.net:22
   * SSH: shell.sourceforge.net:22
@@ -20,23 +21,30 @@
 * [https://cloudinary.com](https://cloudinary.com/) - 存储兼CDN，拥有强大的图片、视频处理能力，国内访问速度较快。
 * [https://drive.google.com](https://drive.google.com) - 谷歌云盘，可通过API构建公共存储。
 * [https://cloud.tencent.com](https://cloud.tencent.com/) - 腾讯云对象存储，可开启CDN，可结合数据万象处理图片。
-* [https://www.scaleway.com/en/pricing](https://www.scaleway.com/en/pricing)
+* [https://www.scaleway.com/en/pricing](https://www.scaleway.com/en/pricing) - 免费版75G对象存储和75G流量，需绑定信用卡。其stardust云服务器价格相当低。
 
 ## 内存缓存
 
-* [https://redislabs.com](https://redislabs.com)
-* [https://upstash.com](https://upstash.com)
+* [https://redislabs.com](https://redislabs.com) - 30MB RAM and 30 connections
+* [https://upstash.com](https://upstash.com) - for Redis Max 10,000 Commands Daily Max Data Size Per DB 256 MB Max Concurrent Connections 1000
 
 ## 数据库
 
 * [https://leancloud.cn](https://leancloud.cn) - 开发版含免费1G的结构化存储空间，另含低配云引擎、云函数。
-* [https://freedb.tech](https://freedb.tech)
 * [https://remotemysql.com](https://remotemysql.com) - 30天无写入操作则自动删除数据库
+* [https://freedb.tech](https://freedb.tech)
 * [https://www.db4free.net](https://www.db4free.net)
 * [https://www.freemysqlhosting.net](https://www.freemysqlhosting.net)
 * [https://www.mongodb.com](https://www.mongodb.com)
+* [https://www.elephantsql.com](https://www.elephantsql.com/)
 * [https://scalingo.com/pricing](https://scalingo.com/pricing) 
 * [https://fauna.com/pricing](https://fauna.com/pricing)
+
+## 图床
+
+* [https://imgbox.com](https://imgbox.com/)
+* [https://imgur.com](https://imgur.com/)
+* [https://imagekit.io](https://imagekit.io/)
 
 ## 域名邮箱
 
